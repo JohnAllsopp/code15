@@ -53,38 +53,39 @@ body {
 	width: 80%
 }
 
-h1 span{
+h2{
 font-size: 3em;
 display: block;
-margin-bottom: 0
+margin-bottom: 0;
+margin-top: 0;
 }
 
-h1 span:first-child{
+h1{
 font-size: 7em;
 display: block;
 margin-top: 1em;
 margin-bottom: 0
 }
 
-h2 {
+h3 {
 margin-top: 0;
 font-size: 2em}
 
-h3 {
+h4 {
 margin-top: 0;
 font-size: 1.6em}
 
-h4 {
+h5 {
 margin-top: 2em;
 font-size: 2em}
 
 
 /*tricks*/
 
-h2, h3 {
+h3, h4 {
 	position: relative;
 	/*context for machine to line up*/
-	height: 1.2em	
+	height: 1em	
 }
 
 .machine, .human {
@@ -99,4 +100,19 @@ transition: opacity .3s}
 
 .machine:hover, .machine:active  {opacity: 1}
 
+p a {font-size: 2em;
+color:  rgb(0, 255, 128);
+ }
+ 
+ p {margin-top: 2em}
 
+.cursor {
+	font-weight: bold;
+	font-size: .8em;
+	display: inline-block;
+	margin-top: -2em
+}
+
+.calendar {
+	font-size: 1.6em
+}
