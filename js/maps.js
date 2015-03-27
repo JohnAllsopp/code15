@@ -1,6 +1,6 @@
 /* Venue map initialisation */
 var map;
-var conference = new google.maps.LatLng(-37.815107,144.966499);
+var conference = new google.maps.LatLng(-37.8211753,144.9685445);
 var workshops = new google.maps.LatLng(-37.815471,144.960684);
 //var party1 = new google.maps.LatLng(-37.814959,144.967899);
 //var party2 = new google.maps.LatLng(-37.811377,144.964229);
