@@ -1,7 +1,7 @@
 /* Venue map initialisation */
 var map;
 var conference = new google.maps.LatLng(-37.8211753,144.9685445);
-var workshops = new google.maps.LatLng(-37.815471,144.960684);
+var hotel = new google.maps.LatLng(-37.821624,144.966902);
 //var party1 = new google.maps.LatLng(-37.814959,144.967899);
 //var party2 = new google.maps.LatLng(-37.811377,144.964229);
 
@@ -58,16 +58,16 @@ function initialise() {
     var E = new google.maps.Marker({
         position: conference,
         map: map,
-        title: "Melbourne Town Hall - Conference Venue",
+        title: "Arts Centre Melbourne - Conference Venue",
         icon: v,
         shadow: B
     });
 
 
     var F = new google.maps.Marker({
-        position: workshops,
+        position: hotel,
         map: map,
-        title: "Karsten's - Workshop Venue",
+        title: "Mantra Hotel",
         icon: t,
         shadow: B
     });
