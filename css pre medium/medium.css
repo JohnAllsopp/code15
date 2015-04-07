@@ -1,0 +1,36 @@
+ #schedule, #workshops, #sponsors, #proposition, #howitworks, #about, #spiel, #fineprint {width: 90%;
+margin: 0 auto;
+}
+
+nav ol {
+width:100%;
+margin: 0 auto}
+
+header {
+width: 100%;
+font-size: 1em}
+
+#logo {padding-right: 5%;
+padding-left: 4%}
+
+.dates {
+	left: 5%
+}
+
+#spiel {font-size: 2em;
+margin-bottom: 0em} 
+
+.session .description, .session .bio {
+width: 100%
+}
+
+#schedule .session .summary {font-size:1em;}
+
+#schedule .session .summary .title {bottom: 3.5em;
+line-height:1.1}
+
+#schedule .session .summary .name {line-height: 1;}
+
+#schedule .description {
+font-size: .9em}
+#venue-map {margin-bottom: 2em}

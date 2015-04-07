@@ -1,0 +1,777 @@
+/* Eric Meyer's Reset CSS v2.0 */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0 }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block }
+
+body {line-height:1;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+/*max-width: 1200px;
+margin: 0 auto*/ }
+
+ol,ul {list-style:none;
+margin: .5em 0}
+
+li {margin-bottom: .2em}
+
+blockquote,q {quotes:none }
+
+blockquote:before,blockquote:after,q:before,q:after {content:none }
+
+em {
+font-weight: 400}
+
+table {border-collapse:collapse;
+border-spacing:0 }
+
+body {background: #fff;
+font: 16px/1.5em "Helvetica Neue",  Helvetica, Arial,  san-serif ;
+font-weight: 200;
+color: #222;
+padding-top: 4em; }
+
+a {text-decoration: none;
+color: purple;
+padding-bottom: 1px; }
+
+a:hover, a:focus {border-bottom: 2px solid rgba(175,0,255,.3); }
+
+sup {vertical-align: super;
+font-size: .625em;
+line-height: 2.4em; }
+
+em, strong {font-weight: 400; }
+
+header {position: fixed;
+top: 0;
+background: rgba(0,0,0,.4);
+width: 100%;
+padding-top: .5em;
+z-index: 501;
+text-align: center;
+text-overflow: ellipsis-word; 
+display: block;
+transition: background .3s}
+
+header.reversed {
+background-colors: rgba(175,0,255, 0.9);
+background-image: url('images/black_twill.png');
+
+}
+
+header {
+margin: 0 auto;
+text-align: left;
+padding-top:1.5em;
+}
+
+
+#logo {
+height: 53px;
+margin: 0 auto;
+display: block;
+position: relative;
+top: -14px; 
+width: 25%;
+padding: 0 0 0 10%;
+float: left}
+
+
+#logo:hover, #logo:focus {border-bottom: none; }
+
+#logo img {float: left;
+margin-right: .2em;
+width: auto;
+height: 45px; }
+
+
+#logo:hover:after, #logo:focus:after {background: none; }
+
+#logo .logotype {font-family: futura, san-serif;
+word-spacing: -.2em;
+color: #fff;
+font-size: 1.1em;
+display: inline-block;
+padding-top: .5em}
+
+nav {width: 60%;
+padding-left: 0;
+margin: -1em 0 0 0;
+text-align: right;
+background-color: transparent; 
+float: right;
+color: #000; }
+
+nav ol {
+width:100%;
+margin: 0 auto}
+
+.dates {position: absolute;
+top: 12px;
+text-align: right;
+color: #000;
+width: 90%;
+margin: 0 auto;
+padding-left: 0;
+font-size: 1em; }
+
+
+nav li {font-size: 1.125em;
+line-height: 1em;
+display: inline-block;
+margin-right: 1.1em; }
+
+nav li:last-of-type  {
+	margin-right: 5%
+}
+
+nav a {color: #fff; }
+
+nav .active {border-bottom: 2px solid #ce0d14; }
+
+nav .active:focus, nav .active:hover {border-bottom-color: #bbb; }
+
+nav a[href='#register'] { }
+
+.ie7 {position: absolute;
+top: 0;
+right: 0;
+width: 28%;
+padding: .75em 1%;
+background: #fff;
+border-left: 2px solid #ce0d14;
+border-bottom: 2px solid #ce0d14; }
+
+
+#hero {position: absolute;
+top: 100px;
+z-index: 5;
+border-style: solid red thin; 
+width: 100%;
+text-align: center;
+font-size: 1.2vw;
+text-shadow: 1px 1px 0 #000}
+
+#hero h1 {
+margin: .1em auto 0 auto;
+font-size: 12em;
+font-family: 'HelveticaMonospacedStd-Rg', Helvetica, Arial, san-serif;
+background: transparent;
+color: #fff;
+line-height: .9;
+font-weight:300;
+text-shadow: none}
+
+#hero h1 span {
+display: inline-block;
+width:25%;
+text-align: center;
+margin: 0 7.5% .25em 7.5%;
+padding: 0;
+line-height: .7;
+border-bottom: solid 3px}
+
+
+#hero p {
+text-align: center;
+color: #ffffff;
+text-transform: uppercase;
+font-family: source-code-pro, monospace;
+font-size: 1.7em;
+font-weight: 100;
+word-spacing: -.3em}
+
+#vid {
+width: 100%;
+margin-top: -5rem;
+background: #000 url('images/black_twill.png') repeat;
+position: relative;
+z-index: 1;
+}
+
+#vid img, #vid video {z-index: 0;
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+opacity: .6;
+display: block;
+/*-webkit-filter: contrast(150%) saturate(.9);*/
+
+}
+
+.moreArrow {/*border-radius: 12px;
+border: solid 1px;*/
+padding-top: 1em;
+display: inline-block;
+text-align: center; 
+line-height: 1;
+color: #fff;
+text-decoration: none; 
+display: inline-block;
+margin: 0 auto}
+
+.moreArrow:hover {text-decoration: none;
+border:none }
+
+.moreArrow img {width: 2.4em }
+
+/* Generic content styles */
+
+.part {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+max-width: 1000px;
+clear: both}
+
+#schedule, #workshops, #venue, #sponsors, #register, #footer, #howitworks, #about {padding-top: 1em;
+
+/*top: -100px;
+padding-top: 100px */}
+
+#schedule, #workshops, #venue, #sponsors, #about, #howitworks {/*overflow: auto;*/ }
+
+#schedule {padding-top: 1em;
+margin-top: -8em;
+/*overflow: auto*/
+}
+
+p+p {margin-top: .75em; }
+
+h1 {font-size: 2.4em;
+line-height: 1.6em;
+clear: both;
+margin-bottom: .281em;
+font-weight: 300;
+text-transform: uppercase;
+margin-top: 0em;
+padding: 0;
+width: intrinsic;			/* Safari/WebKit uses a non-standard name */
+width: -moz-max-content;	/* Firefox/Gecko */
+width: max-content;	/* Firefox/Gecko */
+background-color: #fff
+}
+
+h2 {font-style: normal;
+margin-top: .6em;
+margin-bottom: .325em;
+font-size: 2em;
+display: block;
+clear: both;
+ }
+
+h3, h4, .dates, footer #copyright, .button, #register th, .sessiontitles {
+text-transform: uppercase;
+letter-spacing: 0; }
+
+h1, h2, h3, h4 {
+letter-spacing: 0;
+word-spacing: 0;
+font-weight: 200;
+text-transform: uppercase;
+color: #8d8d8d; }
+
+h1, h2, h3, h4, h5 {
+font-weight: 400;
+color: #2f1344;
+font-family: source-code-pro, monospace}
+
+h3 {padding-top: .5em;
+font-size: 1.4em; }
+
+p {line-height: 1.3;
+font-size:1.1em
+}
+
+#spiel {
+font-size: 1.7em;
+font-weight: 300;
+line-height: 1.5;
+margin-bottom: 1em;
+border-bottom: none thin rgba(175,0,255,.2);
+color: #3e3e3e;
+padding-top: 1.7em;
+padding-bottom: 1.5em
+}
+
+#spiel h2 {
+	font-size: 1.3em;
+	display: block;
+text-align: left; 
+margin-top: 0em;
+font-weight: 300;
+font-family: "Helvetica Neue",  Helvetica, Arial,  san-serif;
+background: transparent;
+text-transform: capitalize;
+color: #3e3e3e;
+line-height: 1.1
+
+}
+
+#spiel p {display: block;
+margin-bottom: 0;
+}
+
+#spiel .button {
+	display: none;
+}
+
+#respond {
+position:-webkit-sticky;
+position: sticky;
+/*position: relative;*/
+top: 0;
+z-index: 500;
+width: 100%
+}
+
+
+
+/* Intro */
+
+#intro {padding-top: 50px;
+height: 200px;
+margin-top: -10px;
+background: url(images/operahouse.jpg) center center no-repeat;
+background-size: cover }
+
+#intro h1 span {display: block }
+
+#intro h1 span:last-of-type {font-size: .9em;
+font-weight: 200 }
+
+
+#intro {padding-top: 170px;
+height: 200px; }
+
+
+#intro h1 {background: #fff;
+background: rgba(255,255,255,.85);
+padding: 1px 15%;
+position: relative; }
+
+#intro p {float: left;
+margin: 1em 13% 0 13%;
+padding: 0 2%;
+font-size: 1.25em;
+line-height: 1.5em;
+color: #555; }
+
+#intro p:first-of-type {margin-top: 5em }
+
+#intro p:last-of-type {padding-top: 1.5em;
+padding-bottom: 1.5em;
+margin-top: 0;
+margin-bottom: 0;
+position: relative;
+z-index: 100 }
+
+/*overview*/
+
+#overview ul {
+	margin: 1em 0 1em 1em
+}
+
+#overview li {
+	margin-bottom: .3em
+}
+
+#overview h2 {
+	font-size: 1.6em}
+
+/*speakers*/
+
+/* #speakers .session {
+
+width: 45%;
+float: left
+}
+
+#speakers .session:nth-of-type(even) {
+margin-left: 4.99%}
+
+#speakers .session img {
+width: 100%}
+
+#speakers .session figcaption {
+display: none}
+
+.session .summary span {display: block} */
+
+
+/* Venue */
+
+#venue  {
+overflow: hidden;
+padding-top: 2em;
+margin-top: -2em;
+clear: both
+}
+
+/*.map {color: #ac090a}*/
+
+
+#venue h2 {width: 30%;
+padding-left: 0; }
+
+#venue h2 img {position: relative;
+top: 12px;
+left: 1.5em; }
+
+
+.venue-details, .registration-details {
+float: left;
+width: 47%;
+margin-bottom: 1em}
+
+.venue-details:nth-of-type(3) {
+margin-left: 0%;
+margin-right: 4%}
+
+ .registration-details:first-of-type {
+margin-right: 5%}
+
+#venue .venue-details h2 {
+width: 100%;
+display: block;
+background: transparent;
+}
+
+#venue .venue-details h2 span {background: #ce0d14; padding: 0 .2em; line-height: 1}
+
+#venue .venue-details h2 img {width: 20px}
+
+#venue .venue-details p {margin-left: 0	}
+
+#venue-map {width: 100%;
+height: 400px;
+margin-top: 2.5em; }
+
+
+/* Register / pricing */
+
+#detailed-pricing h2 {
+font-size: 1.2em;
+margin-bottom: 0;
+line-height: 1}
+
+#detailed-pricing h3 {font-size: 1em;
+padding-top: .5em;
+margin-top: 0;
+line-height: 1.1}
+
+#detailed-pricing h2 + h3 {
+	padding-top: 0;
+
+}
+
+#detailed-pricing a:link {
+display: block;
+width: 98%;
+color: #fff;
+background-color: rgba(175,0,255, .8);
+margin-bottom: .5em;
+margin: 1em auto;
+text-align: center;
+transition: background-color .2s;
+padding: .5em 0;
+text-transform: uppercase}
+
+#detailed-pricing a:hover {
+border: none;
+background-color: rgba(175,0,255, 1);
+color: #fff
+
+}
+
+#detailed-pricing a:visited {
+color: #fff
+}
+
+#detailed-pricing ul {
+	margin: .5em
+}
+
+
+#detailed-pricing li {
+margin-bottom: .15em}
+
+#brief-pricing {
+	display: none
+}
+/* form */
+
+input {height: 2em}
+
+button {margin-left: .5em}
+
+/*nav*/
+
+
+.button {color: #fff;
+display: inline-block;
+padding: .4em 1em; 
+  background-color: rgba(175,0,255,.3);
+}
+
+nav .button, button {background: rgba(175,0,255, 0.6);
+color: #fff;
+display: inline-block;
+padding: .3em 1em;
+margin-top: .6em;
+margin-right: .5em }
+
+nav .button:hover, button:hover {
+background: rgba(175,0,255, 1)	
+}
+
+button {-webkit-appearance: none;
+appearance: none;
+border:none;
+font-size: 1em; }
+
+.button:focus, .button:hover, button:focus, button:hover {border-bottom: none;
+background-image: none; }
+
+#workshops .button {margin-top: 1.5em;
+text-align: center;
+width: 80% }
+
+#register .button {margin-top: 0;
+text-align: center; }
+
+#fineprint {font-size: .8em; 
+display: none}
+
+#fineprint li {margin-left: 2em; }
+
+/* about */
+
+#webdirections {
+overflow: hidden;
+margin: 1.5em auto}
+
+#webdirections > section {
+	width: 45%;
+	float: left
+}
+
+#webdirections > section:first-of-type {
+	margin-right: 4.99%}
+
+
+
+/* Sponsors */
+
+#sponsors {display: block}
+
+.major-partner {width: 50%}
+
+.major-partner img {width: 100%}
+
+
+
+
+/*#sponsors a {display: block;
+position: relative; }*/
+
+#sponsors a:hover, #sponsors a:focus {border-bottom: none; }
+
+#sponsors img {margin-top: .75em;
+display: block;
+max-width: 80%;
+height: auto;
+max-height: 120px;
+/*max-height: 70px;*/
+/*	filter: url(../images/filters.svg#grayscale);
+*/	/* Firefox 3.5+ */
+    	filter: gray;
+/* IE6-9 */
+    -webkit-filter: grayscale(1);
+/* Google Chrome & Webkit Nightlies */
+	-o-filter: grayscale(1); }
+
+#sponsors a:hover img, #sponsors a:focus img {filter: none;
+-webkit-filter: grayscale(0);
+-o-filter: grayscale(0); }
+
+#sponsors h4 {
+position: relative;
+z-index: 9;
+padding: 0em .2em;
+font-weight: 500;
+margin-top: 1em
+
+ }
+
+
+#sponsors a:hover h4, #sponsors a:focus h4 {color: #ce0d14; }
+
+
+#sponsors a.plain:after {display: none }
+
+#sponsors a.plain {display: inline; }
+
+/* Footer */
+
+footer {background: #eee;
+padding-bottom: 1.5em;
+position: relative;
+margin-top: 3em; 
+overflow: auto;
+padding-top: 1em;
+clear: both}
+
+footer #contact {width: 38%;
+float: left;
+margin-right: 5%;
+margin-left: 10%}
+
+footer #links {width: 38%;
+float: left}
+
+footer #copyright {width: 80%;
+margin: 1.846em auto 0 auto;
+font-size: .8125em;
+line-height: 1.846em; 
+clear: both}
+
+footer ul, footer a, footer p {color: #777; }
+
+footer a {border-bottom: 2px solid #bbb; }
+
+footer a:hover, footer a:focus {color: #555; }
+
+/*day details*/
+
+
+/*schedule table */
+
+.bio h3, .day-overview h4 {margin-top: .3em;
+font-family: source-code-pro, monospace;
+background-color: #000;
+color: #fff;
+display: block;
+padding: .2em;
+width: intrinsic;			/* Safari/WebKit uses a non-standard name */
+width: -moz-max-content;	/* Firefox/Gecko */
+width: max-content;	/* Firefox/Gecko */
+font-style: normal;
+font-weight: 500; }
+
+#schedule h4 {margin-top: .4em }
+
+
+
+/*base*/
+
+li {line-height: 1.3}
+
+nav li {line-height: 1}
+
+@media screen and (min-width: 990px) and (max-width: 1000) {
+
+	.summary {font-size:1.5vw}
+
+}
+
+#hero abbr span {
+opacity: 1;
+transition: opacity 1s}
+
+#hero abbr.loading span {
+opacity: .1;
+}
+
+
+
+#hero abbr.loading span{
+-webkit-animation-name: loading;
+-webkit-animation-duration: 8s;
+-webkit-animation-delay: 0s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: both;
+-webkit-animation-direction: alternate;
+
+-moz-animation-name: loading;
+-moz-animation-duration: 4s;
+-moz-animation-delay: 0s;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: ease;
+-moz-animation-fill-mode: both;
+-moz-animation-direction: alternate;
+
+animation-name: loading;
+animation-duration: 4s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+animation-fill-mode: both;
+animation-direction: alternate;
+
+}
+
+#hero abbr.loading #char2 {
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+#hero abbr.loading #char3 {
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+#hero abbr.loading #char4 {
+	-moz-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+@keyframes loading {
+
+0% {
+opacity: .1
+}
+
+100% {
+opacity: 1
+}
+}
+
+@-webkit-keyframes loading {
+
+0% {
+opacity: .1
+}
+
+50% {
+opacity: 1
+}
+
+100% {
+	opacity: .1
+	}
+}
+
+@-moz-keyframes loading {
+
+0% {
+opacity: .3
+}
+
+100% {
+opacity: 1
+}
+}
+
+

@@ -1,0 +1,10 @@
+#overview section {
+	width: 45%;
+	float: left;
+	margin-bottom: 1.2em
+}
+
+#overview section:nth-of-type(even) {
+	margin-left: 4.99%
+}
+

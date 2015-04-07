@@ -1,27 +1,1030 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 <head>
-	<meta charset="utf-8" />
-	<title>Code 2015 Save the Date</title>
-		<link rel="stylesheet" href="style/savethedate.css">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
+	<link rel=stylesheet media="all and (min-width:601px)" href="css/default.css">
+	<link rel=stylesheet media="all and (min-width:601px) and (max-width:1199px)" href="css/medium.css">
+	<link rel=stylesheet media="all and (max-width: 600px)" href="css/narrow.css">
+		<link rel=stylesheet media="all and (min-width:1200px)" href="css/wide.css">
+		<link rel=stylesheet media="all and (min-width:1200px)" href="css/sched.css">
+		
+	<link rel=icon href=favicon.png>
+	
+	<title>Code 2015 presented by Web Directions </title>
+	<meta name=description content="For web professionals who care about responsive design: one day of intense learning, connecting and geeking out. February 6th 2014, in Sydney, Australia.">
+	<meta name=keywords content="web directions code 2014, web directions code, web directions conference, australia web conference, australia web workshop, html5, css3, javascript">
+	
+	
+	<link rel=profile href=http://microformats.org/profile/hcalendar>
+	<link rel=alternate type=application/rss+xml title="Web Directions News" href=http://webdirections.org/feed>
+	
+	<script type="text/javascript" src="fonts/helveticamono.js"></script>
+
+
+
+	<!-- <script src="javascript/sticker.js"></script> -->
+	
+	<!--[if lt IE 9]>
+		<script src="javascript/html5shiv.min.js"></script>
+	<![endif]-->
+	
 <script src="//use.typekit.net/hpa3yll.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
-
-
 </head>
-<body>
-<h1>Code</h1> 
-<h2>Presented by Web Directions</h2>
-<h3><span class="human">June 25 &amp; 26 2015</span><span class="machine">2015-06-25T09:00+10:00/2015-06-25T17:00+10:00</span></h3>
-<h4><span class="human">Melbourne, Australia</span><span class="machine">-37.8602828,145.079616</span></h4>
 
-<h5>Australia's Professional JavaScript and Front End Engineering Conference</h4>
+<body id=home>
+		<div id="vid">
+		<video poster="videos/herov5.jpg" autoplay loop>
+			<source src="videos/v6.webm">
+			<source src="videos/v6.mp4">
+		</video>
+		</div>
 
-<p><a href="assetts/Web_Directions_Code.ics">Save the Date</a>  <span class="calendar">&#128197</span></p>
+	<header>
+		<a id=logo href=#home><img src=images/chrome/arrowleft.svg alt="Web Directions Code" ><span class="logotype">web directions</span></a>
+	
+						<nav>
+			<ol>
+				<li><a href="#schedule" class="internal scroll">Speakers</a></li>
+				<li><a href="#venue" class="internal scroll">Location</a></li>
+				<li><a href="#pricing" class="internal scroll">Pricing</a></li>
+				<li><a href="#masterclass" class="internal scroll">Master Class</a></li>
+				<li><a class=button onClick="_gaq.push(['_trackEvent', 'Register', 'Register', 'Register button in header clicked!',, false]);" href="https://secure.webdirections.org/code15/register/billing">Register</a></li>
+			</ol>
+		</nav>
+	</header>
+
+	<section id="hero">
+		
+	<h1><abbr title="code" class="loading"><span id="char1">c</span><span id="char2">o</span><span id="char3">d</span><span id="char4">e</span></abbr></h1>
+		
+		<p>Melbourne, June 25 <span class="amp">&amp;</span> 26 2015</p>
+		
+		<p><a href="#spiel" class="moreArrow internal scroll"><abbr title="scroll down for more"><img src="images/chrome/downarrow.svg"></abbr></a></p>
+			
+	</section>
+	
+		<script>
+	function adjustVideoHeight() {
+		var vid = document.querySelector("video");
+		var vidWidth = vid.offsetWidth;
+		vid.style.height = (vidWidth * 0.56740614) + 'px'
+	
+		var el = document.querySelector("#hero h1")
+	
+		var t = el.ownerDocument.createTextNode(' ');
+		el.appendChild(t);
+		setTimeout(function() { el.removeChild(t); }, 0);
+	}
+	
+	function videoDownloading(e){
+		var i = 1
+	}
+
+	
+	function videoCanPlay(e){
+		document.querySelector("#hero abbr").classList.remove('loading')
+	}
+	adjustVideoHeight();
+
+	window.addEventListener("resize", adjustVideoHeight, false)
+	//document.querySelector("video").addEventListener('progress', videoDownloading, false);
+	document.querySelector("video").addEventListener('canplay', videoCanPlay, false);
+
+</script>
+
+<section id=spiel class="part"> 
+<h2>Australia's <em>professional</em> JavaScript <span class="amp">&amp;</span> Front End Engineering Conference</h2>
+
+<p>Keeping up with the constantly evolving Web platform is a full time job. Let it be ours, and not yours. So you can get on with building faster, more secure, more scalable, more engaging Web products</p>
+
+</section>
+
+<main>
+
+	<section id="overview" class="part">
+
+<section>
+	<h2>What is Code?</h2>
+
+	<p>Code is two day, one track conference, featuring World leading experts in JavaScript and developing for the Web platform. Produced by Web Directions, and curated by John Allsopp, we've got over a decade's experience in professional events for the Web industry, and John has over 20 years experience developing for, teaching and writing about Web technologies.</p>
+
+<!-- <p>Code also features exclusive <a href="#workshop">whole day Masterclasses</a> with world leading experts.</p> -->
+
+</section>
+
+<section>
+	<h2>Why Attend?</h2>
+	
+	<p>Think of Code as your once-a-year, supercharged refresher course on the current state of JavaScript, Web technologies and best practice in Front End Engineering.</p>
+	
+	<p>What should you be focussing on right now? What's next? We bring the leading experts <em>real world</em> experts from around Australia and the World to share their insights and expertise and help you answer those questions.</p>
+</section>
+
+<section>
+	<h2>Who's it for?</h2>
+	
+	<p>Code is for professionals and teams developing for the Web platform</p>
+
+	<ul>
+		<li>Front end developers and engineers</li>
+		<li>Web developers</li>
+		<li>engineering managers</li>
+		<li>CTOs</li>
+	</ul>
+
+	<p>If you build sophisticated stuff for the Web, Code will help you do it better.</p>
+
+</section>
 
 
+<section>
+	<h2>Topics in a nutshell</h2>
+	 
+	 <p>Code covers the technologies and practices you need to build fast, engaging, secure Web products.</p>
+	 
+<ul>
+	<li>Technologies like <em>JavaScript</em>, advanced <em>CSS</em>, and Web Platform APIs</li>
+	<li>Patterns and practices focussed on <em>security</em>, <em>scalability</em> and <em>performance</em></li>
+</ul>
+</section>
+
+
+</section> <!-- #overview -->
+
+<section id=schedule class="vcalendar part">	
+			
+			<h2>Speakers</h2>
+		
+		<p>Code, like all our events, will feature leading experts, with deep <em>real-world</em> experience from around the country and the World, delivered to your doorstep. It's carefully curated to ensure genuine value and relevance. Speakers at this year's Code are helping to shape the Web's core technologies, and include those serving on the W3C's Technical Architecture Group, the IETF's HTTP Working group, ECMA's TC39 Committee for Standardising JavaScript, and the jQuery board of advisors.</p>
+
+	<section id="sessions">
+		<section id="day1" class="day">
+		
+			<section class="vevent session long" id="AlexRussell">		
+						
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Alex Russell" src="images/speakers/alex-russell.jpg">
+				<span class="name">Alex Russell</span>
+				<span class="title">What comes next for the Web Platform?</span>
+			</h3>
+
+<section class="description">
+
+<h4>What comes next for the Web Platform?</h4>
+<p>The Web has come a long way from the document focussed hypertext network it began life as. Almost from its beginning, developers have been pushing its capabilities, often in ingenious if not entirely safe ways.</p>
+<p>In recent times, standards bodies and browser developers have been upping the pace in the development of the underlying technologies of our platform, and there's no one better to give us a sense of where we're at, and more importantly where these technologies are going than Alex Russell, who is part of both the W3C's Technical Architecture Group, and TC39, the committee standardizing JavaScript. Alex will set the scene for Code by asking "what comes next for the Web platform".</p>	
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">HTML5</span> <span class="tag">JavaScript</span> <span class="tag">Web Platform</span></section>
+			
+<h4>About Alex Russell</h4>
+<p>Alex Russell is a software engineer at Google working on Chrome, Blink and the broader web platform via standards. He's a member of TC39, the committee standardizing ECMAScript/JavaScript and on the W3C’s Technical Architecture Group where he works with a group of like-minded reformers to improve the state of layering and API design for the web.</p>
+
+<p>Previously, he was Director of R&D at SitePen and built rich UIs for JotSpot and Informatica where he helped build Dojo.</p>
+
+
+	<aside class=links>
+				<ul>
+					<li><a href=http://twitter.com/slightlyoff><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=http://github.com/slightlyoff><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=https://infrequently.org><img src="images/chrome/globe.svg" alt="Web logo"></a></li>
+				</ul>
+			</aside>
+</section>
+			
+	
+	
+		</section>
+
+		<section class="vevent session" id="AlexSexton">
+						
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Alex Sexton" src="images/speakers/alex-sexton.jpg">
+				<span class="name">Alex Sexton</span>
+				<span class="title">Current best practice in Front End Ops</span>
+			</h3>
+
+			<section class=description>
+	<h4>Current best practice in front end ops</h4>
+
+<p>Alex Sexton gave a name to that big part of our life that we Front-End folks didn't previously have a name for–Front-End Ops–the knowledge, techniques and practices we use to make faster Web sites and applications, monitor errors, and build and deploy our work.</p>
+
+<p>But nearly two years on, and with developments like HTTP/2, what's the state of Front-End Ops? Who better to tell us than the guy who came up with the name in the first place?</p>
+
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">Performance</span> <span class="tag">Engineering</span></section>
+	
+	<h4>About Alex Sexton</h4>
+			<p>Alex Sexton works for Stripe as a Product Engineer. He lives and works in Austin, TX where he runs the TXJS conference. He’s on the jQuery Board of Advisors, the Dojo Foundation Board, and the Modernizr team and is a big fan of contributing to open source. Alex wrote the article that coined the term “Front-End Ops” for Smashing Magazine in June of 2013, thus adding much credibility to his List of Coined Terms™.</p>
+			
+			<aside class=links>
+				<ul>
+					<li><a href=https://twitter.com/SlexAxton><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=https://github.com/SlexAxton><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=http://alexsexton.com/><img src="images/chrome/globe.svg" alt="globe logo"></a></li>
+				</ul>
+			</aside>
+
+		</section>
+
+</section> <!-- speaker --> 
+
+	<section class="vevent session" id="KassandraPerch">
+			
+			
+						
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Kassandra Perch" src="images/speakers/kassandra-perch.jpg">
+				<span class="name">Kassandra Perch</span>
+				<span class="title">Stop the Fanaticism–using the right tools for the job</span>
+			</h3>
+
+			<section class=description>
+
+<h4>Stop the Fanaticism–using the Right Tools for the Job</h4>
+
+<p>When a JavaScript project is defined, we face a seemingly endless number of choices – from frameworks, to module loading, to dependency management, to code style. There are at least 2 tools for every job, and a group of people willing to argue the merits of each one until they are blue in the face. Fanaticism runs rampant, and we've started to ask the wrong questions when faced with new tools and ways of solving problems. This talk examines the decisions we as developers make, the way we make them, and how we can make these decisions better. We'll talk about framework fanaticism, dealing with large teams, and protecting yourself once you've made your choices.</p>
+
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">JavaScript</span> <span class="tag">Engineering</span> <span class="tag">Architectures</span></section>
+			
+<h4>About Kassandra Perch</h4>
+
+<p>Kassandra (Kas) is a software developer / educator / roboticist living in Austin, TX. She works for Bocoup teaching open web education courses.</p>
+
+<p>Her language specialty is JavaScript, and she also works her way around C/C++, Python, Arduino, and HTML/CSS.</p>
+
+<p>Education is one of her passions, and she loves hearing about opportunities to help spread knowledge of the open web.</p>
+
+<p>When she’s not working on software or robotics, Kas is either drawing, playing video games, or enjoying a good beer.</p>
+
+
+			
+			<aside class=links>
+				<ul>
+					<li><a href=https://twitter.com/nodebotanist><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=https://github.com/nodebotanist><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=http://nodebotani.st/><img src="images/chrome/globe.svg" alt="globe logo"></a></li>
+				</ul>
+			</aside>
+						
+		</section>
+
+
+</section> <!-- speaker --> 
+	
+
+
+				</section> <!-- day1 -->
+	
+		<section id="day2" class="day">
+
+		<section class="vevent session" id="RachelNabors">
+						
+						
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Rachel Nabors" src="images/speakers/rachel-nabors.jpg">
+
+				<span class="name">Rachel Nabors</span>
+				<span class="title">State of the Animation</span>
+			</h3>
+
+			<section class=description>
+<h4>State of the Animation</h4>
+<p>The post-Flash era is hardly free of animation. CSS animation is quickly becoming a cornerstone of user-friendly UI frameworks, and JavaScript libraries already exist to handle complex, interactive animations. And now there’s a new API coming to town specifically for web animations! In the wake of so much “CSS vs. JavaScript animation” infighting, you'll be introduced to the Web Animations API via the development styles and insights of four distinct groups of people: UI designers, interaction developers, library authors, and the browser teams implementing it.</p>
+	
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">Animation</span></section>
+			
+			
+<h4>About Rachel Nabors</h4>
+
+<p>Rachel Nabors is an interaction developer and award-winning cartoonist. She travels the world, speaking about web animation and giving workshops. Her articles on the topic have been published in Smashing Mag, A List Apart, 24 Ways, and Net Mag. When not biking around her home city of Portland, Oregon in the USA, she makes interactive comics at her company <a href="http://tinmagpie.com/">Tin Magpie</a> and publishes Web Animation Weekly.</p>
+
+	<aside class=links>
+				<ul>
+					<li><a href=http://twitter.com/rachelnabors><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=https://github.com/rachelnabors><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=http://rachelnabors.com><img src="images/chrome/globe.svg" alt="web logo"></a></li>
+				</ul>
+			</aside>
+						</section>
+			
+</section>		
+
+
+		<section class="vevent session" id="MarkNottingham">		
+						
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Mark Nottingham" src="images/speakers/mark-nottingham.jpg">
+	<span class="name">Mark Nottingham</span>
+				<span class="title">What does HTTP/2 mean for Front End Engineers?</span>
+			</h3>
+
+			<section class=description>
+			<h4>What does HTTP/2 mean for Front End Engineers?</h4>
+<p>HTTP/2, the long awaited update to the Web's venerable transfer protocol is now complete, and indeed supported in some browsers and by some servers. But we Front End Engineers don't need to worry about all that low level stuff right? After all it just makes everything faster between the client and server.</p>
+<p>Well, it's not quite that simple. In fact there are plenty of things you're likely doing right now, best practices for performance over the network like using sprites, domain sharding, concatentating files and the like that not only won't you have to do with HTTP/2, but which might actually make things worse.</p>
+<p>In this presentation we'll learn from the chair of the IETF working group that developed HTTP/2, Mark Nottingham about what HTTP/2 brings, and what you should and shouldn't be doing to get the most performance benefit from it.</p>	
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">HTTP/2</span> <span class="tag">Engineering</span> <span class="tag">Performance</span></section>
+			
+			
+			<h4>About Mark Nottingham</h4>
+<p>Mark Nottingham has helped develop the Web and its associated technologies for more than fifteen years.</p>
+
+<p>Currently, he's Chair of the IETF HTTP Working Group and a member of the W3C Technical Architecture Group.</p>
+
+<p>He currently works for Akamai, the world’s first, largest and best public Content Delivery Network.</p>
+			
+			<aside class=links>
+				<ul>
+					<li><a href=http://twitter.com/mnot><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=https://github.com/mnot><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=https://www.mnot.net><img src="images/chrome/globe.svg" alt="globe logo"></a></li>
+				</ul>
+			</aside>
+		</section>
+
+
+</section> <!-- speaker --> 
+
+		<section class="vevent session" id="MarkDalgleish">
+									
+			<h3 class="summary">
+				<img class="dinkus" alt="Photo of Mark Dalgleish" src="images/speakers/mark-dalgleish.jpg">
+				<span class="name">Mark Dalgleish</span>
+				<span class="title">Dawn of the Progressive Single Page App</span>
+			</h3>
+
+			<section class=description>
+<h4>Dawn of the Progressive Single Page App</h4>
+<p>With the increasing popularity of single page applications, we've seemingly been forced to choose between progressive enhancement and rich, app-like experiences on the Web. Through the power of server-side JavaScript, we now have the ability to share our UI code between client and server, allowing us to get the best of both worlds by pre-rendering on the server. While extremely powerful, this technique only serves to highlight why progressive enhancement continues to be such a vital approach to web development.</p>
+
+<p>After beginning with a refresher course in progressive enhancement, we'll cover the ways in which we can ensure our single page applications remain crawlable, accessible and resilient, even when JavaScript is completely disabled.</p>
+
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">JavaScript</span> <span class="tag">Engineering</span> <span class="tag">Patterns</span></section>
+			
+	<h4>About Mark Dalgleish</h4>
+			
+<p>Mark Dalgleish is the lead organiser of MelbJS and Decompress, and a full-stack interaction craftsman at SEEK. Having got his start with HTML and UI design at a young age, he has since developed a love of software engineering, but always as a means to creating elegant, usable experiences.</p>
+			
+			<aside class=links>
+				<ul>
+					<li><a href=https://twitter.com/markdalgleish><img src="images/chrome/twitter.svg" alt="twitter logo"></a></li>
+					<li><a href=https://github.com/markdalgleish><img src="images/chrome/github.svg" alt="github logo"></a></li>
+					<li><a href=http://markdalgleish.com/><img src="images/chrome/globe.svg" alt="globe logo"></a></li>
+				</ul>
+			</aside>
+						
+		</section>
+
+</section> <!-- speaker --> 
+				
+				
+						</section> <!-- day2 -->
+		
+</section> <!-- sessions -->
+
+<p>With many more speakers still to be announced, and maybe even you? Read on for details</p>
+
+</section> <!-- schedule -->
+
+	
+	<section id="callforproposals"  class="part">
+	<h2>We want you to speak at Code</h2>
+	
+<p>For more than a decade, uncovering new talent has been one of our goals here at Web Directions. We have provided the opportunity for hundreds of speakers from all over the world to further their career, by taking their first steps on the speakers stage. Many a household name like Nicole Sullivan and Dmitry Baranovskiy had their first significant speaking opportunities on the Web Directions stage (did you know that OOCSS was launched at a Web Directions conference?)</p>
+
+<p>This year, we're offering <em>you</em> that opportunity, and most importantly providing the support you need to make it happen. There's up to ten places at our Code conference open to someone like you. We're offering anyone who submits a proposal some fantastic speaker training and mentoring, and a chance to gain experience and impress your peers on our What Do You Know stage in Sydney and Melbourne.</p>
+
+
+<p>If you're keen, <a href="cfp.html">all the information you need is right here</a></p>
+	
+	</section>
+	
+	<section id="masterclass" class="part">
+	
+	<h2>Masterclasses</h2>
+	
+	<!-- <p>On June 24th choose between one of two masterclasses. Or for your best value, choose a Gold Conference plus Masterclass pass, which includes an invitation to our speaker dinner on June 25.</p> -->
+	
+	<p>On June 24th, the renowned Rachel Nabors will be presenting her Web Animation Masterclass, 'The DOM in Motion'. With animated user experiences moving from nice to have to a necessity, get up to speed with what's possible, and best practice to ensure high performance, 'jank-free' animation on even everyday mobile devices.</p>
+	
+	<p>For best value, register for a Gold Ticket, which includes Conference pass, the Master Class, and a place at the speaker dinner.</p>
+	
+	<h3>The DOM in Motion</h3>
+	<h4>Rachel Nabors</h4>
+	
+<p>Animating DOM elements is crucial to developing interactive designs and interfaces, and CSS and the Web Animation API offer some of the most performant ways to animate today. This workshop gives attendees the future-facing tools they need to do just that. Rich with fun example code, demonstrations, and lectures, there’s a great mix here for people of all learning styles.</p>
+
+	<h4>Key take aways</h4> 
+
+<ul>
+	<li>Mastery of CSS transitions and animations</li>
+	<li>How performance and rendering are intertwined</li>
+	<li>Stateful Animation with JavaScript</li>
+	<li>The Web Animation API</li>
+	<li>Time Objects</li>
+	<li>Controlling playback</li>
+	<li>Animation events</li>
+</ul>
+
+
+		<h4>Required equipment and knowledge</h4>
+
+		<p>This workshop is for Web Developers and Designers who use JavaScript. Bring your laptop to work along on the day.</p>
+	
+	</section>
+
+	
+	<section id="pricing"  class="part">
+
+			<h2>Pricing</h2>
+
+			<section id="pricing-meta">
+
+			<h3>Bring the team</h3>
+			<p>Sending a team of 5 or more to Code is now even more valuable. For the price of a classic ticket per team member, you'll get:</p>
+			
+	<ul>
+	<li>A Silver pass for each attendee (see <a href="#silver">below for details</a>)</li>
+	<li>An invitation for each member to our exclusive speaker Dinner June 25th.</li>
+
+	<li>A Device Lab Pro with Ghostlab license.</li>
+	<li>A team license to all the past Code videos, as well as videos from Code 2015</li>
+	</li>
+</ul>
+
+<p>Just use the code <strong>team</strong> when you register.</p>
+
+		<!-- <h3>Convince the Boss</h3>
+			<p>Need to make the best possible case to attend Web Directions? Simply download and email (or print out) our <a href="http://webdirections.org/code15/downloads/Why-Send-The-Team-To-Code.pdf">one pager</a>.</p> -->
+		
+		<h3>I've only got 2016 Training Budget to spend!</h3>
+			
+		<p>We know Code comes right at the end of the financial year, so if you've got 2015 budget to spend, let us help you. But if you're all out of 2015 budget, get in touch, we hopefully can make something work for you!</p>	
+		
+		</section>
+
+	<table id="detailed-pricing">
+		<tr>
+			<td>
+				<h2>Gold Pass</h2>
+				<h3>Conference, Dinner &amp; Masterclass</h3>
+
+			</td>
+			<td id="silver">	
+				<h2>Silver Pass</h2>
+				<h3>Conference &amp; Dinner</h3>
+
+			</td>
+
+			<td>
+				<h2>Classic Pass</h2>
+				<h3>Conference only</h3>
+
+			</td>
+
+			<td>
+				<h2>MasterClass</h2>
+				<h3>&nbsp;</h3>
+			</td>
+
+
+	</tr>
+		
+		<tr><!-- price and register -->
+			<td>
+				<ul>
+					<li>$1499 (Until May 7)</li>
+					<li>$1599 (Until June 7)</li>
+					<li>$1699 (until June 25)</li>
+				</ul>
+				
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+			</td>
+
+			<td>
+				<ul>
+					<li>$1199 (Until May 7)</li>
+					<li>$1299 (Until June 7)</li>
+					<li>$1399 (until June 25)</li>
+				</ul>
+
+
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+			</td>
+			
+			<td>
+				<ul>
+					<li>$999 (Until May 7)</li>
+					<li>$1099 (Until June 7)</li>
+					<li>$1199 (until June 25)</li>
+				</ul>
+
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+			</td>
+
+			<td>
+				<ul>
+					<li>$599 (Until June 7)</li>
+					<li>$699 (until June 25)</li>
+					<li>&nbsp;</li>
+				</ul>
+
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+		<td>
+			<h3>In Person</h3>
+			<ul>
+				<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+				<li>Exclusive Speaker Dinner Invitation June 25</li>
+				<li>Masterclass June 24</li>
+				<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+				<li>Closing night party</li>
+				<li>Awesome conference coffee</li>
+				<li>Sensational catered breaks</li>
+				<li>Closing night party</li>
+			</ul>
+		</td>
+		
+		<td>
+			<h3>In Person</h3>
+				<ul>
+					<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+					<li>Exclusive Speaker Dinner Invitation June 25</li>
+					<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+					<li>Closing night party</li>
+					<li>Awesome conference coffee</li>
+					<li>Sensational catered breaks</li>
+				</ul>
+		</td>
+		
+		<td>	
+			<h3>In Person</h3>
+
+				<ul>
+				<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+					<li><span class="code">Code</span> Happy Hour <strong>(&amp;</strong> ½)</li>
+					<li>Closing night party</li>
+					<li>Awesome conference coffee</li>
+					<li>Sensational catered breaks</li>
+					
+				</ul>
+		</td>
+
+		<td>	
+			<h3>In Person</h3>
+
+				<ul>
+					<li>Master Class June 24</li>
+					<li>Catered Breaks</li>				
+				</ul>
+		</td>
+
+		
+	</tr>
+	
+		<tr>
+	
+		<td>
+			<h3>Videos</h3>
+
+			<ul>
+				<li><span class="code">Code</span> Conference 2012-2014</li>
+				<li><span class="code">Code</span> Conference 2015 </li>
+			</ul>
+
+		</td>
+
+		<td>
+			<h3>Videos</h3>
+
+			<ul>
+				<li><span class="code">Code</span> Conference 2012-2014</li>
+				<li><span class="code">Code</span> Conference 2015 </li>
+
+			</ul>
+		</td>
+
+		<td>
+		
+					<h3>Videos</h3>
+
+			<ul>
+				<li><span class="code">Code</span> Conference 2015</li>
+			</ul>
+
+		
+		</td>
+
+		<td>
+		
+					<h3>Videos</h3>
+
+		
+		</td>
+
+	
+	</tr>
+			
+		<tr>
+		<td>
+			<h3>Your Investment</h3>
+			<p>Register today, lock in the lowest price, and pay us later</p>
+			<ul>
+					<li>$1499 (Until May 7)</li>
+					<li>$1599 (Until June 7)</li>
+					<li>$1699 (until June 25)</li>
+			</ul>
+
+		</td>
+
+		<td>
+			<h3>Your Investment</h3>
+			<p>Register today today, lock in the lowest price, and pay us later</p>
+
+			<ul>
+					<li>$1199 (Until May 7)</li>
+					<li>$1299 (Until June 7)</li>
+					<li>$1399 (until June 25)</li>
+			</ul>
+		</td>
+
+		<td>
+			<h3>Your Investment</h3>
+			<p>Register today, lock in the lowest price, and pay us later</p>
+
+			<ul>
+					<li>$999 (Until May 7)</li>
+					<li>$1099 (Until June 7)</li>
+					<li>$1199 (until June 25)</li>
+			</ul>
+		</td>
+
+
+		<td>
+			<h3>Your Investment</h3>
+			<p>Register today, lock in the lowest price, and pay us later</p>
+
+			<ul>
+					<li>$599 (Until June 7)</li>
+					<li>$699 (until June 25)</li>
+			</ul>
+		</td>
+
+
+	
+		<tr>
+			<td>
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+
+			</td>
+
+			<td>
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+
+			</td>
+
+			<td>
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+
+			</td>
+
+			<td>
+				<a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a>
+
+			</td>
+		
+		</tr>
+	
+	</tr>
+	</table>	
+	
+<section id="brief-pricing">
+	<section class="experience">
+		<h2>Classic Conference Pass</h2>
+
+			<ul>
+					<li>$999 (Until May 7)</li>
+					<li>$1099 (Until June 7)</li>
+					<li>$1199 (until June 25)</li>
+			</ul>
+		<section class="pricing-more" id="classic-more">
+			<h3>Benefits</h3>
+
+				<ul>
+				<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+					<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+					<li>Closing night party</li>
+					<li>Awesome conference coffee</li>
+					<li>Sensational catered breaks</li>
+					
+				</ul>
+				
+				<p><a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a></p>
+
+		</section>		
+		
+	</section>	
+	<section class="experience">
+		<h2>Silver Conference Pass</h2>
+			<ul>
+					<li>$1199 (Until May 7)</li>
+					<li>$1299 (Until June 7)</li>
+					<li>$1399 (until June 25)</li>
+			</ul>
+		
+		<section class="pricing-more" id="silver-more">
+
+			<h3>Benefits</h3>
+
+				<ul>
+					<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+				<li>Exclusive Speaker Dinner Invitation June 25</li>
+					<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+					<li>Closing night party</li>
+					<li>Awesome conference coffee</li>
+					<li>Sensational catered breaks</li>
+				</ul>
+				
+					<p><a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a></p>
+
+
+		</section>		
+
+	</section>
+	<section class="experience">	
+		<h2>Gold Festival Pass</h2>
+		
+			<ul>
+					<li>$1499 (Until May 7)</li>
+					<li>$1599 (Until June 7)</li>
+					<li>$1699 (until June 25)</li>
+			</ul>
+
+
+		<section class="pricing-more" id="gold-more">
+			<h3>Benefits</h3>
+			<ul>
+				<li><span class="code">Code</span> Conference June 25 &amp; 26</li>
+				<li>Exclusive Speaker Dinner Invitation June 25</li>
+				<li>Masterclass June 24</li>
+				<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+				<li>Closing night party</li>
+				<li>Awesome conference coffee</li>
+				<li>Sensational catered breaks</li>
+				<li><span class="code">Code</span> Happy Hour (&amp; ½)</li>
+				<li>Closing night party</li>
+			</ul>
+				
+				<p><a href="https://secure.webdirections.org/code15/register/billing" class="register-button">Register Now</a></p>
+
+		</section>		
+	</section>
+
+	</section>
+	
+	</section> <!-- pricing -->
+
+
+	<section id=venue  class="part">
+		<h2>Venues</h2>
+		<section class="venue-details">		
+			<h3>Conference Venue <img src="http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ffffff" alt="Conference venue marker for the map below"></h3>
+		<p>ANZ Pavilion,<br>Arts Centre Melbourne,<br>100 St Kilda Road,<br> Melbourne</p>
+				</section>
+
+
+		<!--<section class="venue-details">		
+			<h3>Mantra Hotel <img src="http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|912CEE" alt="Mantra Hotel marker for the map below"></h3>
+<p>Mantra Southbank, Melbourne,<br>
+31 City Road,<br>
+Southbank</p>				</section> -->
+
+
+		<!--<section class="venue-details">		
+			<h2>Workshop Venue <img src="http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|912CEE" alt="Workshop venue marker for the map below"></h2>
+		<p>Karstens, <br>123 Queen Street Melbourne<br>Melbourne</p>
+				</section> -->
+
+		<!-- <section class="venue-details">		
+		<h2>Opening Night Party <img src=http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ab8080 alt="Opening night party venue marker for the map below"></h2>
+		<p>The Long Room, <br>162-168 Collins St, <br>Melbourne</p>
+		</section>
+		
+		<section class="venue-details">		
+		<h2>Closing Night Party<img src=http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=x|ab8080 alt="Closing night party venue marker for the map below"></h2>
+		<p>Baroq House, <br>9-13 Drewery Lane, <br>Melbourne</p>
+		</section>
+		-->
+		<section id=venue-map></section>
+
+		<section class="venue-details">		
+
+		<h2>Accommodation</h2>
+		
+		<!--<p>We've negotiated a great rate at the Mantra Southbank, just a stone's throw from the Arts Centre. Each night pay just $193.</p> -->
+		
+		<p>Traveling from out of town on a budget? We&rsquo;ve pulled together a bunch of cheap and cheerful (as well as slightly more extravagant) options for accommodation and <a href="https://maps.google.com.au/maps/ms?msid=207650445216355917421.0004ba25c0c740b782d25&amp;msa=0&amp;ll=-37.81309,144.963763&amp;spn=0.01585,0.02871">put them on a map</a> for you. Check out <a href="http://www.wotif.com/Hotel-Search?#&destination=Southbank%20Promenade,%20Southbank,%20Victoria,%20Australia&startDate=24/06/2015&endDate=27/06/2015&regionId=6159247&adults=2" title="Wotif.com:  hotels, accommodation, motels, serviced apartments, B&amp;B - Online hotel bookings with instant confirmation">Wotif</a> and <a href="https://www.airbnb.com.au/s/Southbank--Melbourne--Victoria--Australia?checkin=24-06-2015&checkout=27-06-2015&ss_id=mqg2caqn">Airbnb</a> as well. You can almost always find something affordable only a short walk from the venues. But hey, if you or you boss are happy to stump up for the Hilton, don&rsquo;t let us stop you!</p>
+		</section>
+		
+		<section class="venue-details">		
+		<h2>Networking &amp; socialising</h2>
+		<p>Attending a conference like Web Directions Code is a whole lot more than what happens from 9 to 5, and Melbourne has countless great places to grab a drink or a meal at any hour of the night or day. Impress your new friends by taking them to one of the <a href="https://maps.google.com.au/maps/ms?msid=207650445216355917421.0004ba25c0c740b782d25&amp;msa=0&amp;ll=-37.81309,144.963763&amp;spn=0.01585,0.02871">awesome places on our map</a>. And Melbournites, don&rsquo;t hold back with <a href=mailto:info@webdirections.org>sharing any awesome hidden gems</a> we don&rsquo;t know about!</p>
+		</section>
+		
+	</section>					
+	
+	<section id="dinner" class="part">
+	<h2>Join our speakers for dinner on June 25th</h2>
+	<h3>Exclusively for Gold and Silver attendees</h3>
+	
+	<p>As a Gold or Silver ticket holder, you'll receive an invitation to our speaker's dinner on the evening after the first day of the conference. A great chance to have a casual chat with a speaker or two, and enjoy a great meal with your peers.</p>
+	</section>
+	
+	</section>
+	
+	<section id="newsletter" class="part">
+
+		<h2>Not quite sure yet?</h2>
+	
+		<p>Never fear. While you're deciding, why not jump on our once-a-week mailing list of hand picked design, engineering, and other top quality reading, delivered to your inbox in time for the weekend. There's also special discounts and offers exclusively for newsletter subscribers.</p>
+	
+	<form action="http://webdirections.createsend.com/t/y/s/yulhlh/" method="post">
+			<fieldset>
+				<label for="name">First Name:</label> <input type="text" name="cm-name" id="name"> <label for="yulhlh-yulhlh">Email:</label> <input type="text" name="cm-yulhlh-yulhlh" id="yulhlh-yulhlh"><button type="submit">Subscribe</button></fieldset>
+			</form>
+		
+			
+				
+	</section>
+
+	
+	</section> <!-- pricing -->
+	
+	<section id="webdirections" class="part">
+		<h2>About US</h2>
+		<section id="aboutus">
+			<h3>Web Directions</h3>
+	
+			<p>Co-founded and now run by John Allsopp, Web Directions has for over a decade brought together leading developers, engineers, visual, IxD, UX and product designers, Art and Creative Directors, indeed everyone involved in producing web and digital products to learn from one another, and the World's leading experts across this vast field.</p>
+			<p>We spend our lives thinking about what comes next, keeping up with trends in technology, practices and processes, and filtering the hype, to make sure you don't miss trends that matter, and don't waste time on hype that doesn't.</p>
+			<p>We <strong>promise</strong> attending one of our events will leave you significantly better versed in the challenges you face day to day, and in solutions for addressing them.</p>
+		</section>
+	
+	<section id="johnallsopp">
+		
+		<h3>John Allsopp</h3>
+
+		<p>John Allsopp has been working on the Web for over 20 years. He's been responsible for innovative developer tools such as Style Master, X-Ray and many more. He's spoken at numerous conferences around the World and delivered dozens of workshops in that time as well.</p>
+			<p>His writing includes two books, including Developing With Web Standards and countless articles and tutorials in print and online publications.</p>
+			<p>His "A Dao of Web Design" published in 2000 is cited by Ethan Marcotte as a key influence in the development of Responsive Web Design, who's rightly acclaimed article in 2010 begins by quoting John in detail, and by Jeremy Keith as "a manifesto for anyone working on the Web".</p>
+			<p>In short there's few better people anywhere to curate an event focussing on modern Web design.</p></span>
+	</section>
+	
+	</section>
+	
+	<section id="code" class="part">
+	<h2>Code of Conduct</h2>
+	<p>For over a decade, we've worked hard to create inclusive, fun, inspring and safe events for the Web Industry. As part of our commitment to these values, we've adopted a <a href="http://www.webdirections.org/web-directions-event-code-of-conduct/">code of conduct for all involved:</a> ourselves, our speakers, our partners and our audience. If you have any concern or feedback, please don't hesitate to contact us.</p>
+	</section>
+	
+
+	<section id="partners" class="part">
+		<h2>Partners</h2>
+		
+		
+		<section id="significant">
+		<h3>Major Partners</h3>
+
+			<section class="major-partner">
+				<a href="http://silverstripe.com.au"><img src="images/partners/silverstripe.svg" ></a>
+			</section>
+			
+		</section>
+		
+		<h3>Partner with Code</h3>
+
+<p>At Web Directions we work closely with partners to help make our events even better. Sponsor our coffee, a juice bar, a reception or drinks, and start, or grow your relationship with Australia's leading Front End engineers and JavaScript developers </p>
+
+<p><a href=mailto:info@webdirections.org>Contact us</a> for more on how we work can work with you to help you be even more awesome.</p>
+<!--		<section id="significant">
+		<h3>Awesome coffee from</h3>
+
+			<section class="major-partner">
+				<a href="http://campaignmonitor.com"><img src="images/partners/campaignmonitor.svg" ></a>
+			</section>
+			
+		</section>
+
+		<section id="significant">
+		<h3>Happy hour (&amp; ½)</h3>
+
+			<section class="partner-medium">
+				<a href="http://sitepoint.com"><img src="images/partners/sitepoint.svg" ></a>
+			</section>
+			
+		</section>
+		
+		<section id="exhibitors">
+		
+		<h3>Exhibitors</h3>
+		
+			<section class="partner-medium">
+				<a href="http://ephox.com"><img src="images/partners/ephox.png" ></a>
+			</section>
+
+		</section>
+		
+		<section id="media">
+		
+		<h3>Community &amp; Media Partners</h3>
+			<section class="partner-small">
+				<a href="http://web-design-weekly.com"><img src="images/partners/rwd.svg" ></a>
+			</section>
+
+			<section class="partner-small">
+				<a href="http://www.meetup.com/SydCSS/"><img src="images/partners/sydcss.jpeg" ></a>
+			</section>
+
+			<section class="partner-small">
+				<a href="http://www.sydjs.com"><img src="images/partners/sydjs.svg" ></a>
+			</section>
+
+			<section class="partner-small">
+				<a href="http://beresponsive.io"><img src="images/partners/be-responsive.png" ></a>
+			</section>
+
+		</section>
+		
+	</section> -->
+	
+	
+	<footer>
+	
+	
+		<section id="contact" class="footer-details">
+			<h3>Contact</h3>	
+			
+			<ul>
+				<li>Email: <a href=mailto:info@webdirections.org>info@webdirections.org</a></li>
+				<li>Twitter: <a href=http://twitter.com/webdirections>@webdirections</a></li>
+				<li>Phone: +61 2 9043 6797</li>
+			</ul>
+		</section>
+		
+		<section id=links class="footer-details">
+			<h3>More</h3>
+			
+			<ul>	
+				<li>Mark Dalgleish used courtesy of © <a href="michaelvalli.com">Michael Valli</a> </li>			
+				<li><a href="http://webdirections.org">News &amp; articles</a></li>
+				<li><a href="http://webdirections.org/sign-up-to-the-newsletter/">Newsletter</a></li>
+				<li><a href="http://webdirections.org/terms-and-conditions">Terms and conditions</a></li>
+				<li><a href="http://webdirections.org/privacy">Privacy policy</a></li>
+			</ul>
+		</section>
+		
+		<p id="copyright">&copy; Web Directions. ABN: 20 118 802 118. All rights reserved.</p>
+	</footer>
+
+</main>
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+<script src="javascript/smooth-scroll.js"></script>
+<script src="javascript/maps.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6049317-5', 'webdirections.org');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="javascript/showdetails.js"></script>
+<script type="text/javascript" src="javascript/headerNav.js"></script>
+
+
+
+<script>
+	shower.init()
+</script>
 </body>
 </html>

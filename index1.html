@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang=en>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+	<link rel=stylesheet media="all and (min-width:601px)" href="css/default.css">
+	<link rel=stylesheet media="all and (min-width:601px) and (max-width:799px)" href="css/medium.css">
+	<link rel=stylesheet media="all and (max-width: 600px)" href="css/narrow.css">
+		<link rel=stylesheet media="all and (min-width:1200px)" href="css/wide.css">
+		
+	<link rel=icon href=favicon.png>
+	
+	<title>Web Directions Code 2014</title>
+	<meta name=description content="For web professionals who care about responsive design: one day of intense learning, connecting and geeking out. February 6th 2014, in Sydney, Australia.">
+	<meta name=keywords content="web directions code 2014, web directions code, web directions conference, australia web conference, australia web workshop, html5, css3, javascript">
+	
+	
+	<link rel=profile href=http://microformats.org/profile/hcalendar>
+	<link rel=alternate type=application/rss+xml title="Web Directions News" href=http://webdirections.org/feed>
+
+
+	<!-- <script src="javascript/sticker.js"></script> -->
+	
+	<!--[if lt IE 9]>
+		<script src="javascript/html5shiv.min.js"></script>
+	<![endif]-->
+	
+<script type="text/javascript">
+//uncomment and change this to false if you're having trouble with WOFFs
+//var woffEnabled = true;
+//to place your webfonts in a custom directory 
+//uncomment this and set it to where your webfonts are.
+//var customPath = "/themes/fonts";
+</script>
+<script type="text/javascript" src="fonts/helveticamono.js"></script>
+
+<body id=home>
+		<div id="vid">
+		<video poster="videos/herov5.jpg" autoplay loop>
+			<!-- <source src="http://webdirections.org/code14-dev/videos/v6.mp4"> -->
+			<source src="videos/v6.webm">
+			<source src="videos/v6.mp4">
+		</video>
+		</div>
+
+	<script>
+	//unload video if in small screen
+	var style = window.getComputedStyle(document.querySelector("video"), null);
+	
+	var display = style.getPropertyValue('display')
+	
+	if (style.getPropertyValue('display') === 'none') {
+		//not showing so remove it
+		
+		var vid = document.querySelector("video");
+		vid.parentElement.removeChild(vid)
+	}
+	
+	
+	</script>
+
+
+	<header>
+		<a id=logo href=#home><img src=images/chrome/redlogo.png alt="Web Directions Code" ><span class="logotype">web directions</span></a>
+	
+						<nav>
+			<ol>
+				<li><a href="#schedule" class="internal scroll">Schedule</a></li>
+				<li><a href="#workshops-link" class="internal scroll">Workshop</a></li>
+				<li><a href="#venue" class="internal scroll">Venues</a></li>
+				<li><a href="#register" class="internal scroll">Pricing</a></li>
+				<li><a class=button onClick="_gaq.push(['_trackEvent', 'Register', 'Register', 'Register button in header clicked!',, false]);" href="https://secure.webdirections.org/code15/register/billing">Register</a></li>
+			</ol>
+		</nav>
+	</header>
+
+	<section id="hero">
+		
+	<h1><abbr title="code" class="loading"><span id="char1">c</span><span id="char2">o</span><span id="char3">d</span><span id="char4">e</span></abbr></h1>
+		
+		<p>Melbourne, May 1 <span class="amp">&amp;</span> 2 2014</p>
+		
+		<p><a href="#spiel" class="moreArrow internal scroll"><abbr title="scroll down for more"><img src="images/chrome/downarrow.svg"></abbr></a></p>
+			
+	</section>
+	
+		<script>
+	function adjustVideoHeight() {
+		var vid = document.querySelector("video");
+		var vidWidth = vid.offsetWidth;
+		vid.style.height = (vidWidth * 0.56740614) + 'px'
+	
+		var el = document.querySelector("#hero h1")
+	
+		var t = el.ownerDocument.createTextNode(' ');
+		el.appendChild(t);
+		setTimeout(function() { el.removeChild(t); }, 0);
+	}
+	
+	function videoDownloading(e){
+		var i = 1
+	}
+
+	
+	function videoCanPlay(e){
+		document.querySelector("#hero abbr").classList.remove('loading')
+	}
+	adjustVideoHeight();
+
+	window.addEventListener("resize", adjustVideoHeight, false)
+	//document.querySelector("video").addEventListener('progress', videoDownloading, false);
+	document.querySelector("video").addEventListener('canplay', videoCanPlay, false);
+
+</script>
+		
+		<!--[if lte IE 7]>
+			<p class=ie7>Hmmmm, looks like you're using Internet Explorer 7 or below, which means things might not look so pretty &lsquo;round these parts right now. We are going to fix this, but in the meantime, we hope most of the content of the site is at least available. Please <a href="mailto:info@webdirections.org">get in touch</a> if you have any questions at all.</p>
+		<![endif]-->
+						
+	
+<section id=spiel> 
+<h2>Australia's <em>professional</em> JavaScript <span class="amp">&amp;</span> HTML5 developer conference</h2>
+
+<p>Featuring the world's leading experts in web and mobile development, JavaScript, HTML5, advanced CSS, Nodejs and more, it's the funnest way to help you and your team stay on top of the web development game.
+
+</p>
+
+</section>
+
+<section id=schedule class="vcalendar">	
+	
+	<h1>Schedule</h1>
+	
+	<p>Web Directions Code is a two day, single track conference on May 1 and 2. We mix more traditional, long–form presentations with short, sharp, highly focussed ones to create a unique blend of inspiration and education. The conference runs from 9am to 5.30pm, with parties afterwards, on both days</p>
+	<p>There's also an <a href="#workshops">optional, all day, hands-on workshop</a> on developing smarter, faster "offline first" web sites and apps with John Allsopp on April 30th, 9am - 5pm.</p>
+
+	<section id="sessions">
+
+		<section id="day1" class="day">
+		<h2>May 1</h2>
+		<section class="vevent session" id="AlexRussell">
+			<figure>
+				<img class="dinkus" alt="Photo of Alex Russell" src="images/speakers/alex-russell.jpg">
+				<figcaption>Alex Russell</figcaption>
+			</figure>
+			
+			<section class=description>
+			
+						
+			<h3 class="summary">
+				<span class="name">Alex Russell</span>
+				<span class="role">software engineer, Google Chrome, TAG, TC39</span>
+				<span class="title">What comes next for the Web Platform</span>
+			</h3>
+
+<section class="abstract">
+<p>The Web has come along way from the document focussed hypertext network it began life as. Almsot from its beginning, developers have been pushing its capabilities, often in ingenious if not entirely safe ways.</p>
+<p>In recent times, standards bodies and browser developers have been upping the pace in the development of the underlying technologies of our platform, and there's no one better to give us a sense of where we're at, and more importantly where these technologies are going than Alex Russell, who is part of both the W3C's Technical Architecture Group, and TC39, the committee standardizing JavaScript. Alex will set the scene for Code by asking "what comes next for the Web platform".</p>	
+	<section class="tags"><h3>Tags</h3>
+	<span class="tag">HTML5</span> <span class="tag">JavaScript</span> <span class="tag">Web Platform</span></section>
+			
+			</section>
+			
+			<section class="bio">
+
+<p>Alex Russell is a software engineer at Google working on Chrome, Blink and the broader web platform via standards. He's a member of TC39, the committee standardizing ECMAScript/JavaScript and on the W3C’s Technical Architecture Group where he works with a group of like-minded reformers to improve the state of layering and API design for the web.</p>
+
+<p>Previously, he was Director of R&D at SitePen and built rich UIs for JotSpot and Informatica where he helped build Dojo.</p>
+
+
+</section>
+			
+			<aside class=links>
+				<ul>
+					<li><a href=http://twitter.com/slightlyoff>@slightlyoff</a></li>
+					<li><a href=http://github.com/slightlyoff>slightlyoff</a></li>
+					<li><a href=https://infrequently.org>Web</a></li>
+				</ul>
+			</aside>
+						
+			<aside class="time">
+				<abbr class="dtstart" title="2013-05-03T09:00:00">9:05am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2013-05-03T10:00:00">10:00am</abbr>
+			</aside>
+		</section>
+
+
+</section> <!-- speaker --> 		
+				
+		
+			<section class="vevent break">
+							<h3 class="summary"><span class="title">Morning tea</span></h3>
+							<section class=description>
+								<p>Treat yourself to pear and blueberry tea cake, mini danish pastries and chocolate and raspberry brownies. You deserve it!</p>
+							</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T10:15:00">May 1, 10:15am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T10:45:00">May 1, 10:45am</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="ryanseddon">
+			
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Ryan Seddon" src="images/speakers/ryan-seddon.jpg">
+					<span class="name">Ryan Seddon</span>
+					<span class="title"><br>Web Components: the future of web dev</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>Web Components: the future of web dev</h4>
+					<p>For years Web developers have hacked up their own controls, using <code>div</code>s and classes and CSS. The results have often been amazing, but the costs have been high. Often poor code quality, a tendency for every developer to roll their own controls.</p>
+					<p>But there's a light on the horizon, Web components. This inter-related, but also independently useful set of technologies, like HTML templates and the Shadow DOM enable Web application authors to, in the words the specification, "define widgets with a level of visual richness and interactivity not possible with CSS alone, and ease of composition and reuse not possible with script libraries today."</p>
+					<p>In this session, Ryan Seddon gets you up to speed with components, and how you can start using them today.</p>
+					<h4>About Ryan Seddon</h4>
+<p>Ryan Seddon is a Senior Software Engineer at Zendesk. Hailing from Melbourne Australia, he has an unnatural obsession with JavaScript and the many places it runs. In his spare time he’s either playing basketball, writing for his blog thecssninja.com or committing code to github.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/ryanseddon>@ryanseddon</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T10:45:00">May 1, 10:45am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T11:35:00">May 1, 11:35am</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session short" id="fionachan">
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Fiona Chan" src=images/speakers/fiona-chan.jpg>
+					<span class="name">Fiona Chan</span>
+					<span class="title"><br>The declarative power of CSS selectors</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>The declarative power of CSS selectors</h4>
+					<p>CSS is at times something of the red headed step-shild of Web technologies, seen as fine for adding a bit of style to Web sites, but not "real programming". Well think again. Beneath its stylish surface beats a powerhours of sophistication, Selectors, which you can use not only with CSS, but to manipulate the DOM as well using querySelector.</p>
+<p>In this session, CSS wunderkind Fiona Chan takes us into the little explored world of sophisticated CSS selectors. Your development will never be the same again.</p>
+					<h4>About Fiona Chan</h4>
+<p>Fiona is a fun size front-end developer who is passionate about web standards and making the web an accessible place for all. Her love for CSS and the web community has led her to co-found SydCSS and being one of the organisers for CSSConf Australia. Previously she's worked at Stubbornella, Bigcommerce, Fairfax Media and a few other digital agencies.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/mobywhale>@mobywhale</a></li>
+					</ul>
+				</aside>
+			
+		</section>						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T11:40:00">May 1, 11:40am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T11:55:00">May 1, 11:55am</abbr>
+				</aside>
+			</section>
+
+			<section class="vevent session short" id="benschwarz">
+			
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Ben Schwarz" src=images/speakers/ben-schwarz.jpg>
+					<span class="name">Ben Schwarz</span>
+					<span class="title"><br><br>CSS Variables</span>
+				</h3>
+		
+				<section class=description>
+					<h4>CSS variables</h4>
+					<p>A head first dive into the past, present and future of all things variable in CSS. Theres waaay more going on than you might first think — Maybe you didn't know that you can access your variables by JavaScript? Or perhaps you'd just like to know WHY the variables spec ended up where it did? These questions will be answered in this 15 minute power session.</p>
+					<h4>Ben Schwarz</h4>
+<p>Ben Schwarz is an independent web dude from Melbourne. He's an invited expert to the W3C CSS working group, 1/5 of CSSConf, a percentage of JSConf (We all know how good JavaScript is at numbers), a bower team member and a swag of other stupid projects. 
+</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/benschwarz>@benschwarz</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+		
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T12:00:00">May 1, 12:00pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T12:15:00">May 1, 12:15pm</abbr>
+				</aside>
+			</section>
+			
+			<section class="vevent session short" id="robmanson">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Rob Manson" src=images/speakers/rob-manson.jpg>
+					<span class="name">Rob Manson</span>
+					<span class="title"><br>The Augmented Web is now a reality</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>The Augmented Web is now a reality</h4>
+<p>For a long time Augmented Reality has been imprisoned in the land of the Native Application. But now Web Standards, Browsers, Devices and javascript libraries have matured enough to set AR free, making it possible to create AR that runs using "nothing but a Web Browser". In fact it's not only "possible", it's downright easy and loads of fun too! I'll show you how today, you can easily add AR as an alternative interaction model to any web application you are building and how this will totally change the way you and your users will see and use the web over the next few years.</p>
+
+					<h4>About Rob Manson</h4>
+<p>Rob Manson is CEO and co-founder of buildAR.com, the world's leading Augmented Reality Content Management System. Rob is the Chair of the W3C Augmented Web CG and an Invited Expert with the ISO, W3C and the Khronos Group. He is an active evangelist within the global AR and standards communities and he is regularly invited to speak on the topics of the Augmented Web, Augmented Reality, WebRTC and multi-device platforms. Rob's latest book "<a href="http://amazon.com/dp/1782166300" title="Getting Started with WebRTC: Rob Manson: 9781782166306: Amazon.com: Books">Getting started with WebRTC</a>" is now a 5 star hit on Amazon.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/robman>@robman</a></li>
+					</ul>
+				</aside>
+			
+		</section>			
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T12:20:00">May 1, 12:20pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T12:35:00">May 1, 12:35</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent break">
+							<h3 class="summary"><span class="title">Lunch</span></h3>
+							<section class=description>
+								<p>Head to the buffet for Indian vegetable curry with chick peas, potato and cauliflower, along with butter chicken and basmati rice; marinated and slow cooked pork sliders; roasted pumpkin, rocket, beetroot and goat's curd salad; cauliflower salad with peas and turmeric dressing; assorted lavoche wraps and finger sandwiches and then finishing with a selection of fresh seasonal fruits and Australian and European cheeses.</p>
+							</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T12:35:00">May 1, 12:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T13:35:00">May 1, 1:35pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="barbarabermes">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Barbara Bermes" src=images/speakers/barbara-bermes.jpg>
+					<span class="name">Barbara Bermes</span>
+					<span class="title">A publisher's take on controlling 3rd party scripts</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>3rd party provider footprint: A publisher's take on controlling 3rd party scripts</h4>
+
+<p>It's almost impossible to find a website anymore that doesn't utilize any kind of embedded widgets such as ads, social plugins or analytics: All of these add-ons are considered 3rd party scripts and promise to increase and benefit publisher's revenue. Publishers don't have much control over the provider's code and inevitable just have to trust their integrity, content security policy, code quality and performance.</p>
+
+<p>Imagine a high-traffic website hosting a Twitter widget: Are publishers aware that a sudden Twitter server outage could potentially bring down their site if the widget is not properly included? </p>
+
+<p>The performance and availability of 3rd party scripts don't have to become a worry for publishers. Barbara's talk will not only outline best practices, tools and tricks on how to sandbox 3rd party scripts but also help the audience understand bottlenecks, determine potential risks, and elaborate on how to measure their performance.</p>
+
+					<h4>About Barbara Bermes</h4>
+<p>Barbara has been captivated by the web since the millennium and has always been passionate about its capabilities. After working for web agencies in Germany and Canada, and most recently working as a Senior Architect and Performance Advocate for Canada’s national public radio and television broadcaster (CBC), she joined OANDA as the Product Manager for their Developer Program and API. Barbara is an international speaker and organizer of the Toronto Web Performance Meetup Group.
+</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/bbinto>@bbinto</a></li>
+					</ul>
+				</aside>
+			
+		</section>				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T13:35:00">May 1, 1:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T14:25:00">May 1, 2:25pm</abbr>
+				</aside>
+			</section>
+
+			<section class="vevent session short" id="jaredwyles">
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Jared Wyles" src=images/speakers/jared-wyles.jpg>
+					<span class="name">Jared Wyles</span>
+					<span class="title"><br><br>On readable code</span>
+				</h3>
+		
+				<section class=description>
+					<h4>On readable code</h4>
+<p>Developers have a bunch of well established “axioms" of readable code. Yet, how much time have you wasted arguing about whitespace or semicolons, which some may say is a personal choice? Is readability even the right thing to strive for? I think it’s time we had a chat about some of these “established” axioms of readability.</p>
+					<h4>About Jared Wyles</h4>
+					
+<p>As a senior computer scientist at Adobe, Jared is putting his money where his mouth is in order to improve the web. Previously, he’s worked with Atlassian, Bigcommerce, and the usual digital agencies.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/rioter>@rioter</a></li>
+					</ul>
+				</aside>
+			
+		</section>						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T14:30:00">May 1, 2:30pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T14:45:00">May 1, 2:45pm</abbr>
+				</aside>
+			</section>
+			
+			<section class="vevent session short" id="andrewfisher">
+			
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Andrew Fisher" src=images/speakers/andrew-fisher.jpg>
+					<span class="name">Andrew Fisher</span>
+					<span class="title"><br>A Device API Safari</span>
+				</h3>
+		
+				<section class=description>
+					<h4>A Device API Safari</h4>
+					<p>The Device API is what enables web browsers to appear more "native", giving the browser access to new hardware components that are being created primarily in phones and tablets but on some desktops too. Motion and Orientation are well known features of the API, however there are a plethora of others to play with too.
+
+Let's take a tour through the jungle that is the Device API spec and go looking for some new, interesting features of the API. We'll focus on the ones that will be landing in mainstream browsers soon and that you can play with now in order to explore new interaction methods.
+</p>
+					<h4>Andrew Fisher</h4>
+<p>Andrew Fisher plays at the intersection of the web, mobile tech, ubicomp and data.He does some real work too and has been involved with organisations globally since the dawn of the web creating digital solutions for brands including Nintendo, peoplesound, Sony, Cotton On, the Melbourne Cup and Optus. Andrew is the CTO for JBA, a data agency in Melbourne, Australia.
+</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/ajfisher>@ajfisher</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+		
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T14:50:00">May 1, 2:50pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T15:05:00">May 1, 15:05pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent break">
+				<h3 class="summary"><span class="title">Afternoon tea</span></h3>
+							<section class=description>
+								<p>Give yourself an afternoon pickup with mini fruit tartlets, orange and poppy seed slice and european style cookies</p>
+							</section>			
+			
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T15:05:00">May 1, 3:05pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T15:35:00">May 1, 3:35pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="allenwirfs-brock">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Allen Wirfs-Brock" src=images/speakers/allen-wirfs-brock.jpg>
+					<span class="name">Allen Wirfs-Brock</span>
+					<span class="title">ECMAScript 6: A Better JavaScript for the Ambient Web Era</span>
+				</h3>
+
+				<section class=description>
+<h4>ECMAScript 6: A Better JavaScript for the Ambient Web Era</h4>
+
+<p>We've entered the Ambient Computing Era and JavaScript is its dominant programing language, But a new computing era needs a new and better JavaScript. It's called ECMAScript 6 and it's about to become the new JavaScript standard. Why do we need it? Why did it take so long? What's in it? When can you use it? Answers will be given.</p>
+
+<p>Allen Wirfs-Brock is a Mozilla Research Fellow and the technical editor of ECMA-262, the international standard that defines the JavaScript programming language. He is an expert in dynamic, object-oriented programming languages and their implementation but is also an entrepreneur who founded two successful companies. When he's not working on the evolution of JavaScript, he is thinking and writing about the technical and societal implications of the rapidly emerging Ambient Computing Era.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/awbjs>@awbjs</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T15:35:00">May 1, 3:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T16:25:00">May 1, 4:25pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="DmitryBaranovskiy">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Dmitry Baranovskiy" src=images/speakers/dmitry-baranovskiy.jpg>
+					<span class="name">Dmitry Baranovskiy</span>
+					<span class="title"><br>You Don't Know SVG</span>
+				</h3>
+
+				<section class=description>
+					<h4>You Don't Know SVG</h4>
+					<p>The animated Web has come a long way since JavaScript based animations just a few years ago. Increasingly, developers are taking advantage of CSS transforms, transitions, and animation to bring their interfaces to life. But these sophisticated visualizations and experiences users expect at times need more than JavaScript and this is where SVG comes in. </p>
+
+					<p>In this session Dmitry Baranovskiy shows us how to resurrect our content using Scalable Vector Graphics.</p>
+
+					
+				<h4>Dmitry Baranovskiy</h4>
+<p>Dmitry started his journey back in 2000 as a back-end developer, then a designer and has now finally settled and accep­ted his fate as a front-end develoepr. Des­pite his deep know­ledge of CSS and HTML, he mainly specializes in JavaScript and is well known as the creator of Raphaël, Snap.SVG as well as other JavaScript libraries. These days he is a Senior Computer Scientist with Adobe.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/DmitryBaranovsk>@DmitryBaranovsk</a></li>
+					</ul>
+				</aside>
+			
+		</section>			
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T15:40:00">May 1, 3:40pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T16:25:00">May 1, 4:25pm</abbr>
+				</aside>
+			</section>
+
+		
+			<section class="vevent break">
+				<h3 class="summary"><span class="title">Opening Reception</span></h3>
+				<section class=description>
+					<p>After we wrap up on Thursday evening, pop round the corner for a drink and a chance to share some of your thoughts on what you&rsquo;ve seen today with other conference attendees, and speakers. Why not round up a group and head out to dinner after?</p>
+				</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-01T17:45:00">May 1, 5:45pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-01T19:4500">May 1, 7:45pm</abbr>
+				</aside>
+			</section>
+		</section> <!-- day1 -->
+	
+		<section id="day2" class="day">
+		<h2>May 2</h2>
+			<section class="vevent session long" id="alexf">
+		
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Alex Feyerke" src=images/speakers/alex-feyerke.jpg>
+					<span class="name">Alex Feyerke</span>
+					<span class="title">Offline First: faster, more robust and more fun (web) apps</span>
+				</h3>
+		
+				<section class=description>
+					<h4>Alex Feyerke</h4>
+					<p>Just assume for a minute that the technical side of building offline-capable (web) apps was really simple. Because it's getting easier every day, and it's obviously desirable: having a robust, reliable app instead of one that turns into a wonky disappointment when it's disconnected for a moment. But what does building apps offline first mean in terms of interfaces and experiences, in terms of your application's structure? What new things can you do? What problems can you solve? What problems does it cause? Is it too much trouble, or is it the future? A talk about patterns for offline UX, persistent local data, confident wording, pre-empting user needs, conflict resolution and ordering things in lists.
+</p>
+					<h4>About Alex</h4>
+<p>Alex works as a freelance frontend developer and consultant in Berlin and is one of the founding members of <a href="http://hood.ie/" title="Hoodie">Hoodie</a>. He also helps organise Berlin's frontend usergroup <a href="http://up.front.ug" title="up.front – webdesign <span class="amp">&amp;</span> frontend meetup berlin">up.front</a>. </p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/espylaub>@espylaub</a></li>
+					</ul>
+				</aside>
+		</section>						
+				<aside class="time">
+					<abbr class="dtstart" title="2013-05-02T09:00:00">May 2, 9:00am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2013-05-02T10:00:00">May 2, 10:00am</abbr>
+				</aside>
+			</section>
+				
+		
+			<section class="vevent break">
+							<h3 class="summary"><span class="title">Morning tea</span></h3>
+							<section class=description>
+								<p>Treat yourself to pear and blueberry tea cake, mini danish pastries and chocolate and raspberry brownies. You deserve it!</p>
+							</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T10:15:00">May 2, 10:15am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T10:45:00">May 2, 10:45am</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="rodvagg">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Rod Vagg" src=images/speakers/rod-vagg.jpg>
+					<span class="name">Rod Vagg</span>
+					<span class="title">Embrace the asynchronous</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>Embrace the asynchronous</h4>
+
+<p>Embrace the asynchronous: for most of its history, programming has been primarily concerned with serial flows of execution. Only since the ascent of the web have millions of programmers been exposed to, and embraced, event-driven, asynchronous programming.</p>
+
+<p>Programming for the web is reactionary. We respond to events from the user, the network and the browser itself. We're regularly receiving new new asynchronous APIs in our browsers, like Geolocation and IndexedDB.</p>
+
+<p>Node.js takes asynchronous programming to a new level and has tracked the rise of new approaches to managing complex program flows. Callbacks, event emitters and streams form the basis of the Node.js tool-set. JavaScript control-flow libraries are a dime a dozen. More recently we've seen wide adoption of Promises and we are now on the verge of new language primitives in JavaScript itself: generators.</p>
+
+<p>Join Rod Vagg for a deep-dive into event-driven programming with JavaScript and learn to embrace the asynchronous.</p>
+
+					<h4>About Rod Vagg</h4>
+					<p>Rod Vagg describes himself as a recovering Java programmer with a passion for JavaScript. Rod has been building software for the web for nearly 15 years and is excited about the modularity and productivity afforded by Node.js for constructing complex and performant web applications.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/rvagg>@rvagg</a></li>
+					</ul>
+				</aside>
+			
+		</section>						
+						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T10:45:00">May 2, 10:45am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T11:35:00">May 2, 11:35am</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session short" id="benbirch">
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Ben Birch" src=images/speakers/ben-birch.jpg>
+					<span class="name">Ben Birch</span>
+					<span class="title">When all you have is a hammer, every problem looks like a nail</span>
+				</h3>
+
+			
+				<section class=description>
+					<h4>When all you have is a hammer, every problem looks like a nail</h4>
+					<p>JavaScript has come a long way with just two tools: the Object and the Array. This talk introduces some of the new native data structures that are available in modern javascript, with unique and powerful capabilities that allow you to write fast, elegant and expressive code.</p>
+					<h4>About Ben Birch</h4>
+					<p>Ben is a Tech Lead and Beer Baron at Aconex. He’s spent the first 10 years writing JavaScript frameworks, and is now trying to undo all the damage he's done. By day he builds enterprise apps and by night contributes to several open source projects and playing with whatever the hot-new-thing is. You can sometimes spot Ben up the back at @melbjs, pouring the beers.
+</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/mobz>@mobz</a></li>
+					</ul>
+				</aside>
+			
+		</section>						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T11:40:00">May 2, 11:40am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T11:55:00">May 2, 11:55am</abbr>
+				</aside>
+			</section>
+
+			<section class="vevent session short" id="MarkDalgleish">
+			
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Mark Dalgleish" src=images/speakers/mark-dalgleish.jpg>
+					<span class="name">Mark Dalgleish</span>
+					<span class="title"><br>Taking JavaScript out of context</span>
+				</h3>
+		
+				<section class=description>
+				<h4>Taking JavaScript out of context</h4>
+					<p>The 'this' keyword is one of the most perplexing aspects of JavaScript, but understanding function context needn’t be so intimidating. In this session we’ll examine how ‘this’ works, how to control it, and how to harness its surprising flexibility. Finally, we’ll discuss how we can move beyond ’this’, looking at the ways in which we can write powerful code without it.</p>
+					<h4>Mark Dalgleish</h4>
+<p>Mark Dalgleish is a senior UI developer at SEEK and the lead organiser of MelbJS. He’s obsessed with everything web and loves using JavaScript, CSS and HTML to create rich experiences that resonate with end users. In his spare time, he loves experimenting with the latest web technologies, sharing projects online and helping others learn progressive web development techniques.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/markdalgleish>@markdalgleish</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+		
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T12:00:00">May 2, 12:00pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T12:15:00">May 2, 12:15pm</abbr>
+				</aside>
+			</section>
+			
+			<section class="vevent session short" id="damonoehlman">
+		
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Damon Oehlman" src=images/speakers/damon-oehlman.jpg>
+					<span class="name">Damon Oehlman</span>
+					<span class="title"><br>Streaming the Web (it's not what you think)</span>
+				</h3>
+		
+				<section class=description>
+					<h4>Streaming the Web (it's not what you think)</h4>
+					<p>Tim Berners-Lee originally proposed HyperText as a way "to link and access information of various kinds as a web of nodes in which the user can browse at will".  When we look at the web today, it is very easy to see that it has become so much more but also exactly that. As we strive to do more with this "web of nodes" there are certain developmental patterns that allow us to rewire the web to create sophisticated applications that can still be easy to understand.  Streams are one of these development patterns and this talk will walk through how you can use streams both for your benefit and for the benefit of your fellow developers.</p>
+					<h4>Damon Oehlman</h4>
+					<p>Damon Oehlman is an experienced web and mobile applications developer. He has worked with small and large companies to develop software solutions for desktop, web and most recently mobile devices. Damon currently works on WebRTC at NICTA, as well as numerous of his own open source projects.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/damonoehlman>@damonoehlman</a></li>
+					</ul>
+				</aside>
+		</section>			
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T12:20:00">May 2, 12:20pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T12:35:00">May 2, 12:35</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent break">
+							<h3 class="summary"><span class="title">Lunch</span></h3>
+							<section class=description>
+								<p>Head to the buffet for Indian vegetable curry with chick peas, potato and cauliflower, along with butter chicken and basmati rice; marinated and slow cooked pork sliders; roasted pumpkin, rocket, beetroot and goat's curd salad; cauliflower salad with peas and turmeric dressing; assorted lavoche wraps and finger sandwiches and then finishing with a selection of fresh seasonal fruits and Australian and European cheeses.</p>
+							</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T12:35:00">May 2, 12:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T13:35:00">May 2, 1:35pm</abbr>
+				</aside>
+			</section>
+			
+						<section class="vevent session long" id="Paul Theriault">
+		
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Paul Theriault" src=images/speakers/paul-theriault.jpg>
+					<span class="name">Paul Theriault</span>
+					<span class="title"><br>Taking front-end security seriously</span>
+				</h3>
+		
+				<section class=description>
+					<h4>Taking front-end security seriously</h4>
+					<p>This presentation reviews the most common client-side security issues and how to avoid them. Taking lessons learned from building a web-based OS and app ecosystem, we'll look at the underlying causes of front-end security issues.  We'll examine strengths and weakness of common application frameworks and introduce tools and techniques for detecting, correcting and avoiding security issues in the first place. 
+</p>
+					<h4>Paul Theriault</h4>
+<p>Paul Theriault is the security lead for Mozilla's Firefox OS project - a project developing a mobile operating system based on web technologies. He has an extensive background in web security with experience ranging from application security testing and code review through to risk assessment and security management. 
+</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/creativemisuse>@creativemisuse</a></li>
+					</ul>
+				</aside>
+		</section>				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T13:35:00">May 2, 1:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T14:25:00">May 2, 2:25pm</abbr>
+				</aside>
+			</section>
+
+			<section class="vevent session short" id="marknottingham">
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Mark Nottingham" src=images/speakers/mark-nottingham.jpg>
+					<span class="name">Mark Nottingham</span>
+					<span class="title">What's happening in TLS (transport layer security)?</span>
+				</h3>
+		
+				<section class=description>
+					<h4>What's happening in TLS (transport layer security)?</h4>
+<p>Web browser security nerds have been really busy lately, with a lot of proposals, extensions and experiments to TLS (a.k.a. SSL) happening. Find out what's happening, why, and what might make your browser safer in 2014 and beyond.</p>
+					<h4>About Mark Nottingham</h4>
+					
+<p>Mark Nottingham has helped develop Web technologies like Atom and HTTP for more than ten years. He is Chair of the IETF HTTPbis Working Group, an effort to first clean up HTTP/1.1 and then develop HTTP/2.0 and currently works for Akamai, the world’s first, largest and best public Content Delivery Network.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/mnot>@mnot</a></li>
+					</ul>
+				</aside>
+			
+		</section>						
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T14:30:00">May 2, 2:30pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T14:45:00">May 2, 2:45pm</abbr>
+				</aside>
+			</section>
+			
+			<section class="vevent session short" id="alexmackey">
+			
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of Alex Mackey" src="images/speakers/alex-mackey.jpg">
+					<span class="name">Alex Mackey</span>
+					<span class="title"><br>Harden up your ajax!</span>
+				</h3>
+		
+				<section class=description>
+					<h4>Harden up your ajax!</h4>
+					<p>There are an annoying amount of things that can go wrong when making a call using the XMLHttpRequest object (that thing that makes Ajax possible) and to make matters worse many of these are outside of your control. Let's look at solutions for dealing with common ajax related issues such as timeouts & loss of connectivity to ensure our users can always buy those fancy silver cat widgets your boss is so eager to sell online.</p>
+					<h4>Alex Mackey</h4>
+<p>Alex works as a Software Development Lead for Kiandra IT. He runs the non-profit conference DDDMelbourne.com & wrote the books Introducing .NET 4.0 & Introducing .NET 4.5 for Apress. When he’s not in front of a computer he enjoys cross fit, cat videos & kicking people at Taekwondo.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/alexjmackey>@alexjmackey</a></li>
+					</ul>
+				</aside>
+			
+		</section>
+		
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T14:50:00">May 2, 2:50pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T15:05:00">May 2, 15:05pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent break">
+				<h3 class="summary"><span class="title">Afternoon tea</span></h3>
+							<section class=description>
+								<p>Give yourself an afternoon pickup with mini fruit tartlets, orange and poppy seed slice and european style cookies</p>
+							</section>			
+			
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T15:05:00">May 2, 3:05pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T15:35:00">May 2, 3:35pm</abbr>
+				</aside>
+			</section>
+				
+					<section class="vevent session long" id="TantekCelik">
+
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of Tantek Çelik" src=images/speakers/tantek-celik.jpg>
+					<span class="name">Tantek Çelik</span>
+					<span class="title">The once and future IndieWeb</span>
+				</h3>
+
+				<section class=description>
+					<h4>The once and future IndieWeb</h4>
+					<p>In the beginning, the Web was a simple thing. A bit of HTML, running on a server you probably had root access to, and maybe even had running under your desk. Fast forward 20 years, and most of the Web's content resides in silos, like Twitter and Facebook and Instagram. Our Web sites have become Tumblrs, or blogs hosted at Wordpress.org.</p>
+					<p>But this poses huge challenges for the longevity, integrity, and ultimately ownership of the content we create.</p>
+					
+					<p>In this presentation, Tantek Çelik, one of the great contributors to the open Web challenges us to re-imagine the "IndieWeb" from long ago.</p>
+					<h4>Tantek Çelik</h4>
+					<p>Tantek Çelik currently works on Open Web Standards at Mozilla. His extensive history on the Web inludes authoring several key W3C specifications, leading the development efforts on Internet Explorer 5 for the Macintosh, co-founding the Microformats movement, and inventing the now infamous, though vital CSS box model hack.
+He continues to advocate for, and work tirelesssly to develop standards and technologies for an open Web.</p>
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/t>@t</a></li>
+					</ul>
+				</aside>
+			</section>				
+
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T15:35:00">May 2, 3:35pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T16:25:00">May 2, 4:25pm</abbr>
+				</aside>
+			</section>
+		
+			<section class="vevent session long" id="panel">
+		
+					<h3 class="summary">
+					<img class="dinkus" alt="Photo of TBA" src="images/speakers/anonymous.png">
+					<span class="name">hand picked speaker selection</span>
+					<span class="title">Question Time</span>
+				</h3>
+		
+				<section class=description>
+					<h4>Question Time</h4>
+<p>We'll close two intense days with a panel discussion featuring several of our speakers as we pick apart the big issues that have emerged during Code. There'll be a chance to help shape the agenda, and ask questions as well.</p>
+
+				<aside class=links>
+					<ul>
+						<li><a href=http://twitter.com/>@tba</a></li>
+					</ul>
+				</aside>
+		</section>
+		</section>
+			<section class="vevent break">
+				<h3 class="summary"><span class="title">Closing Night Party</span></h3>
+				<section class=description>
+					<p>Before you jump on your plane, or head back home, it's Friday night, so why not stay for a drink with fellow conference goers and speakers?</p>
+				</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-05-02T17:45:00">May 2, 5:45pm</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-05-02T23:59:00">May 3, Late (if you like)</abbr>
+				</aside>
+			</section>
+		</section> <!-- day2 -->
+		
+</section> <!-- sessions -->
+
+</section> <!-- schedule -->
+
+
+<section id="workshops">
+
+<h1 id="workshops-link">Workshop</h1>
+
+			<section class="vevent" id="JohnAllsopp">
+				<h3 class="summary">
+					<img class="dinkus" alt="Photo of John Allsopp" src=images/speakers/john-allsopp.jpg>
+					<span class="name">John Allsopp</span>
+					<span class="title">Offline First: smarter, faster, better web sites and apps</span>
+				</h3>
+
+				<section class=description>
+					<h4>Offline First: smarter, faster, better web sites and apps</h4>
+<p>HTML5 and related W3C developments over the last few years have introduced numerous valuable features for more application like development. One area where the Web has made significant improvements in recent years is in the ability to work offline, and rely less and less on being always connected to a server side.</p>
+
+<h5>What we'll cover</h5>
+<p>In this all day, hands-on workshop, John Allsopp will cover the technologies now available to help your sites and applications work while a user isn't connected to the Web, and better even when they are, including</p>
+
+<ul>
+	<li>HTML5 Application Cache for sites that work offline (and faster sites too)</li>
+	<li>webstorage (a simple, in-browser database)</li>
+	<li>The File API (providing better access to local files, such as images)</li>
+	<li>Offline Events</li>
+</ul>
+
+<h5>Who's it for</h5>
+
+<p>Front End developers, with at least some exposure to JavaScript (but there's no need to be an expert to take advantage of almost all these features)</p>
+
+</section>
+<section class="biography">
+					<h4>About John Allsopp</h4>
+
+<p>For nearly 20 years John has developed software (such as <a href="http://westciv.com">Style Master CSS editor</a>) and written books (including <a href="http://devwws.com">Developing with Web Standards</a>), courses, tutorials, and articles for web designers and developers, and he's one of the founders of the Web Directions Conferences.</p>
+
+<p>In 2000, he wrote A dao of web design for A List Apart. Described as "A manifesto for anyone working on the web" by Jeremy Keith, and cited as a key inspiration for Responsive Web Design by Ethan Marcotte. It outlined the idea that the Web is its own medium, and we must embrace its characteristics, not decry them as bugs.</p>
+
+<p>John is still as excited about the Web and all things computing as he was when he got his first computer, the venerable TRS-80, a lifetime ago.</p>
+
+			
+		</section>
+				<aside class="time">
+					<abbr class="dtstart" title="2014-30-04T09:00:00">April 30, 9:00am</abbr><span class="ndash">&ndash;</span><abbr class="dtend" title="2014-30-04T17:00:00">5:00pm</abbr>
+				</aside>
+			</section>
+
+</section> <!-- workshops -->
+	
+
+<section id=register>
+		<h1>Pricing</h1>
+				<p>Conference and Workshop are fully catered, and conference also includes an opening night reception, and closing night party.</p>
+				<p>Need to convince the boss or HR you have to get to Code? Download and print out (or forward to them) our "<a href="http://webdirections.org/downloads/why-web-directions-code2014.pdf">Why Web Directions Code</a>"</p>
+
+
+		<section class="registerItem" id="conference">
+			<section class="details">
+			<h3 class="name">Code Conference</h3>
+			<h4 class="price">$1099</h4>
+			<h5 class="date">May 1 <span class="amp">&amp;</span> 2</h5>
+		</section>
+
+			<p><a href="https://secure.webdirections.org/code14/register/billing" class=button>Register</a></p>
+		</section>
+		
+		
+		<section class="registerItem" id="festival">
+			<section class="details">
+				<h3 class="name">Festival Pass</h3>
+				<h4 class="price">$1599<h4>
+				<h5 class="date">April 30, May 1 <span class="amp">&amp;</span> 2</h5>
+			</section>
+			<p><a href="https://secure.webdirections.org/code14/register/billing" class=button>Register</a></p>
+
+		</section>
+		
+		
+		<section class="registerItem" id="masterclass">
+			<section class="details">
+				<h3 class="name">Offline Workshop</h3>
+				<h4 class="price">$599</h4>
+				<h5 class="date">April 30</h5>
+				<!-- <h6>Satisfaction Guaranteed</h6> -->
+
+			</section>			
+			<p><a href="https://secure.webdirections.org/code14/register/billing" class=button>Register</a></p>
+			
+		</section>
+		
+	<div id="guarantee">
+			<h2>Our money back guarantee</h2>
+			
+			<p>If you've never been to a Web Directions event before, you might be concerned that while we talk a good game, it's a big risk of your time and money. So, here's our guarantee. <strong>If by lunch on the first day we aren't delivering the experience you expected, come tell us, and we'll give you your money back.</strong></p>
+		<p><strong>We promise</strong>. <a href="http://www.webdirections.org/terms-and-conditions/">See terms of conditions for more</a>.</p>
+</div>
+
+</section>
+
+
+		
+	<section id=venue>
+		<h1>Venues</h1>
+		<section class="venue-details">		
+			<h2>Conference Venue <img src="http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ffffff" alt="Conference venue marker for the map below"></h2>
+		<p>Melbourne Town Hall, <br>90/120 Swanston Street, <br>Melbourne</p>
+				</section>
+
+		<section class="venue-details">		
+			<h2>Workshop Venue <img src="http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|912CEE" alt="Workshop venue marker for the map below"></h2>
+		<p>Karstens, <br>123 Queen Street Melbourne<br>Melbourne</p>
+				</section>
+
+		<!-- <section class="venue-details">		
+		<h2>Opening Night Party <img src=http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ab8080 alt="Opening night party venue marker for the map below"></h2>
+		<p>The Long Room, <br>162-168 Collins St, <br>Melbourne</p>
+		</section>
+		
+		<section class="venue-details">		
+		<h2>Closing Night Party<img src=http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=x|ab8080 alt="Closing night party venue marker for the map below"></h2>
+		<p>Baroq House, <br>9-13 Drewery Lane, <br>Melbourne</p>
+		</section>
+		-->
+		<section id=venue-map></section>
+
+		<section class="venue-details">		
+
+		<h2>Accommodation</h2>
+		<p>Traveling from out of town on a budget? We&rsquo;ve pulled together a bunch of cheap and cheerful (as well as slightly more extravagant) options for accommodation and <a href="https://maps.google.com.au/maps/ms?msid=207650445216355917421.0004ba25c0c740b782d25&amp;msa=0&amp;ll=-37.81309,144.963763&amp;spn=0.01585,0.02871">put them on a map</a> for you. Check out <a href="http://www.wotif.com/" title="Wotif.com:  hotels, accommodation, motels, serviced apartments, B&amp;B - Online hotel bookings with instant confirmation">Wotif</a> and <a href="https://www.airbnb.com.au/s/Melbourne--Victoria--Australia?checkin=30-04-2014&checkout=03-05-2014&source=bb">Airbnb</a> as well. You can almost always find something affordable only a short walk from the venues. But hey, if you or you boss are happy to stump up for the Hilton, don&rsquo;t let us stop you!</p>
+		</section>
+		
+		<section class="venue-details">		
+		<h2>Eating, drinking and socialising</h2>
+		<p>Attending a conference like Web Directions Code is a whole lot more than what happens from 9 to 5, and Melbourne has countless great places to grab a drink or a meal at any hour of the night or day. Impress your new friends by taking them to one of the <a href="https://maps.google.com.au/maps/ms?msid=207650445216355917421.0004ba25c0c740b782d25&amp;msa=0&amp;ll=-37.81309,144.963763&amp;spn=0.01585,0.02871">awesome places on our map</a>. And Melbournites, don&rsquo;t hold back with <a href=mailto:info@webdirections.org>sharing any awesome hidden gems</a> we don&rsquo;t know about!</p>
+		</section>
+		
+	</section>					
+		<section id=sponsors>
+		<h1>Partners</h1>
+		
+		<p>Web Directions Code will be even more awesome thanks to the support of our sponsors. If you're keen to engage an audience of leading mobile and Web designers and developers, <a href="http://webdirections.org/contact" class="plain">drop us a line</a>.</p>
+
+<ul>
+
+			<li class="main"><h4>Key Sponsors</h4><a href="http://silverstripe.com"><img src="images/partners/silverstripe-logo.png" alt="Silverstripe"></a></li>
+			<li class="significant"><h4>Significant Sponsors</h4><a href="http://modern.ie/"><img src="images/partners/msie.png" alt="Microsoft"></a></li>
+			<li class="significant"><h4>Significant Sponsors</h4><a href="http://mozilla.org/"><img src="images/partners/mozilla.png" alt="Mozilla"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://beresponsive.io"><img src="images/partners/be-responsive.png" alt="Be Responsive"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.sydjs.com"><img src="images/partners/sydJS.svg" alt="Be Responsive"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://melbjs.com"><img src="images/partners/melbjs.png" alt="Be Responsive"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/perth-js/"><img src="images/partners/perth-js.png" alt="PerthJS"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/"><img src="images/partners/rails-melb.jpeg" alt="Rails Melbourne"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/Melbournemobile/"><img src="images/partners/melbourne-mobile.png" alt="Melbourne Mobile"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/Girl-Geek-Dinners-Melbourne/"><img src="images/partners/geek-girls.jpeg" alt="Geek Girls Melbourne"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/Internet-of-Things-Sydney/"><img src="images/partners/iot-sydney.png" alt="IOT Sydney"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/SydCSS/"><img src="images/partners/sydcss.png" alt="SydCSS"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://www.meetup.com/MelbNodeJS/"><img src="images/partners/melb-nodejs.png" alt="Node Melbourne"></a></li>
+			<li class="partner"><h4>Community</h4><a href="http://phpmelb.org"><img src="images/partners/phpmelb.png" alt="PHP Melbourne"></a></li>
+
+			<li><h4>Media</h4><a href="http://web-design-weekly.com"><img src="images/partners/wdw.png" alt="Web Design Weekly"></a></li> 
+
+			<li class="partner"><h4>Community</h4><a href="http://www.webindustry.asn.au"><img src="images/partners/awia.jpg" alt="AWIA"></a></li>
+
+
+			<!-- <li><h4>Community</h4><a href="http://sydcss.com/"><img src="images/sydcss.png" alt="SydCSS"></a></li> -->
+			<!-- <li><a href="http://99designs.com.au/"><h4>Sponsor</h4><img src="http://static.webdirections.org/webdirections/images/sponsor-99designs.png" alt="99designs"></a></li>
+			<li><a href="http://www.wakanda.org/"><h4>Exhibitor</h4><img src="http://static.webdirections.org/webdirections/images/sponsor-wakanda.png" alt="Wakanda"></a></li>
+			<li><a href="http://dius.com.au/"><h4>Lanyard sponsor</h4><img src="http://static.webdirections.org/webdirections/images/sponsor-dius.png" alt="Wakanda"></a></li>
+			<li><a href="http://www.mozilla.org/"><h4>Barista coffee sponsor</h4><img src="http://static.webdirections.org/webdirections/images/sponsor-mozilla.png" alt="Mozilla"></a></li> -->
+		</ul>
+		
+	</section>
+
+			
+	<footer>
+		<section id=contact class="footer-details">
+			<h3>Contact</h3>	
+			
+			<ul>
+				<li>Email: <a href=mailto:info@webdirections.org>info@webdirections.org</a></li>
+				<li>Twitter: <a href=http://twitter.com/webdirections>@webdirections</a></li>
+				<li>Phone: +61 2 9043 6797</li>
+			</ul>
+		</section>
+		
+		<section id=links class="footer-details">
+			<h3>More from Web Directions</h3>
+			
+			<ul>
+				<li><a href="http://webdirections.org">News <span class="amp">&amp;</span> articles</a></li>
+				<li><a href="http://webdirections.org/sign-up-to-the-newsletter/">Newsletter</a></li>
+				<li><a href="http://webdirections.org/terms-and-conditions">Terms and conditions</a></li>
+				<li><a href="http://webdirections.org/privacy">Privacy policy</a></li>
+				<li><a href="http://www.webdirections.org/web-directions-event-code-of-conduct/">Code of Conduct</a></li>
+			</ul>
+		</section>
+		
+		<p id=copyright>&copy; Web Directions. ABN: 20 118 802 118. All rights reserved.</p>
+	</footer>
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+<script src="javascript/smooth-scroll.js"></script>
+<script src=javascript/maps.js></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6049317-5', 'webdirections.org');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="javascript/showdetails.js"></script>
+<script type="text/javascript" src="javascript/headerNav.js"></script>
+
+
+
+<script>
+	shower.init()
+</script>
+</body>
+</html>

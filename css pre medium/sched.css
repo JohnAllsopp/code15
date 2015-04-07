@@ -1,0 +1,469 @@
+/* Schedule, Workshops */
+/*#sessions {height: 20em;
+overflow:auto}
+
+#sessions h3 {position: sticky;
+top: 0}*/
+
+
+#schedule h2, #workshops h2, #proposition h2 {clear: both;
+margin-bottom: .6em;
+margin: 1em 0
+}
+
+#sessions {overflow: visible;
+position: relative;
+z-index: 0;
+clear: both;
+margin-top: 2em;
+margin-bottom: 2em;
+overflow: visible}
+
+#sessions >h3 {margin-top: 1em}
+
+#sessions + p {clear: both;
+padding-top: 1.2em}
+
+#schedule .vevent, #workshops .vevent {position: relative;
+}
+
+#schedule .session, #workshops .session {border-top: 1px none #ccc;
+margin: 0 auto 0 auto;
+width: 100%;
+/*position: relative;
+z-index: 5*/}
+
+.session {cursor: help;}
+
+.session:last-of-type {
+	margin-bottom: 2em
+}
+
+#schedule .session .title, #schedule .session .name{
+display: block;
+font-style: normal;
+position: absolute;
+color: #fff;
+width: 55%;
+margin: 0;
+z-index: 1;
+-webkit-font-smoothing: antialiased;
+}
+
+#schedule .session .title, #workshops  .title {
+bottom: 2.2em;
+height: 2.6em;
+font-weight: 300;
+text-transform: none;
+left: 42%;
+vertical-align: text-bottom;
+line-height: 1
+}
+
+#schedule #day2 .session .title {
+left: 2%
+}
+
+#schedule #day2 .session .name {
+left: 2%
+}
+
+#schedule .session .name, #workshops .summary .name {
+bottom: .5em;
+font-weight: 600;
+font-size: .8em; 
+left: 42%;
+font-variant: small-caps
+}
+
+#schedule .session .name::after{
+content: "+";
+position: absolute;
+right: 0;
+bottom: 0;
+width: 18px;
+height: 18px;
+text-align: center; 
+line-height: 16px;
+font-size: 18px;
+font-weight: bold;
+font-family: helvetica;
+color: white;
+opacity: .6;
+}
+
+.session .description {
+width: 96%;
+position:absolute;
+background: rgba(0, 0, 0, .95);
+background: url('images/black_twill.png');
+top: 0%;
+left: 0%;
+opacity: 0;
+transition: opacity .3s, -webkit-transform .3s;
+transition: opacity .3s, transform .3s;
+height: auto;
+overflow: scroll;
+padding: .5em 2%;
+border: solid 1px #000;
+-webkit-transform: scale(0);
+-webkit-transform-origin : 0 0;
+transform: scale(0);
+transform-origin : 0 0;
+color: #efefef;
+box-shadow: 1px 1px 5px rgba(0,0,0,.7);
+z-index: 5;
+font-size: .85em
+}
+
+.session .description.showing {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+
+#day2 .session .description {
+	left: 0%
+}
+
+.day {width: 48%;
+}
+
+.day:first-of-type {float: left;
+margin-right: 1px;
+margin-left: 0%}
+
+.day:nth-of-type(2) {float: left}
+
+.day:nth-of-type(2)>h2 {
+text-align: right; }
+
+.day > h2 {margin-bottom: .6em}
+
+.summary {/*position: relative;*/ /*create positioning context for descendents*/
+overflow: hidden;
+width: 100%;
+height: 192px;
+z-index: 1;
+padding: 0;
+font-family: "Helvetica Neue", Helvetica, Arial,  san-serif;
+overflow: hidden;
+border: solid #fff 1px;
+box-sizing: border-box;
+font-size:1.8vw}
+
+.session .summary::after, #workshops .summary::after {
+  content: "";
+  background: rgba(175,0,255,.5);
+  opacity: 0.7;
+  top: 2px;
+  left: 40%;
+left: calc(40% + 1px);
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 0;   
+}
+
+#workshops .summary::after {
+  top: 0px;
+ }
+
+#day2 .session .summary::after {
+  left: 1px;
+top: 1px;
+  bottom: -1px;
+  right: 40%;
+  right: calc(40% + 1px);
+ }
+
+
+.short .summary {}
+
+
+
+.break .summary {/*position: relative;*/ /*create positioning context for descendents*/
+overflow: hidden;
+width: 400px;
+height: auto;
+z-index: 1;
+padding: 0;
+text-align: center; }
+
+.break .description{
+display: block;
+font-weight: 300;
+display: none}
+
+.break .time{
+display: none}
+
+.tags {display: none}
+
+
+.session .summary, #workshops .summary {
+background-image: url('images/black_twill.png');
+background-repeat: repeat; 
+overflow: hidden;
+position: relative}
+
+.summary {
+transition: background .3s}
+
+.summary a:hover{
+border: none}
+
+
+#schedule .summary .name {
+display: block
+}
+
+.summary img {
+position: absolute;
+z-index: 0;
+width: 40%;
+border-right: none 1px #dedede;
+opacity: .6;
+height: auto;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter .5s;
+-webkit-transition: -webkit-filter .5s;
+}
+
+.summary:hover img{
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+}
+
+
+#day2 .summary img {
+right: 0;
+border-left: none 1px #efefef;
+border-right: none}
+
+.summary p {
+position: absolute;
+bottom: 0;
+right: 5%;
+background-color: #000;
+color: #fff;
+font-size: .9em;
+font-weight: 300}
+
+#schedule .break {color: #999;
+margin: 0;
+padding:1.5em 0;
+background-color: #fff;
+position: relative;
+z-index: 4; }
+
+#schedule .break .title {background: #fff;
+padding: 0 .5em;
+margin-left: -.5em;
+font-weight: 300;
+text-align: center; }
+
+#schedule .break a {border-bottom: 2px solid #bbb;
+color: #999; }
+
+#schedule .break a:focus, #schedule .break a:hover {color: #ce0d14;
+border-bottom-color: #999; }
+
+#schedule .bio, #workshops .bio {font-style: normal;
+color: #444; }
+
+#schedule .description + .bio, #workshops .description + .bio {margin-top: 1em; }
+
+.description h4, .biography h4 {color: purple;
+font-weight: 400;
+font-size: 1.2em}
+
+.description p {display: block}
+
+#schedule figure, #workshops figure {float: left;
+margin: 4.5em 1.5em 1.5em -34.7%;
+width: 32.22%;
+height: auto;
+}
+
+#workshops img {margin-bottom: 21em; }
+
+
+#schedule figure {
+width: 170px;
+margin-top: 1em;
+position: relative; /*create positioning context*/ 
+padding: 0;
+height: 170px;}
+
+figure img {width: 100%;
+}
+
+#schedule figcaption {position: absolute;
+bottom: 10%;
+left: 5%;
+display: block;
+font-family: 'letter-gothic-std', monospace;
+font-weight: 500;
+color: #fff;
+background-color: #ce0d14;
+font-size: 1.1em;
+padding: .2em;
+line-height: 1.2;
+display: none
+}
+
+#schedule .links, #workshops .links {margin-top: 1em;
+padding-bottom: .4em; }
+
+#schedule .links li, #workshops .links li {display: inline-block;
+margin-right: 1.5em; }
+
+#schedule .links li:nth-of-type(2) {
+display: inline-block}
+
+#schedule .links a:focus, #schedule .links a:hover, #workshops .links a:focus, #workshops .links a:hover {border-bottom-color: #ccc; }
+
+#schedule .links a img {
+width: 1.8em
+}
+#schedule .links a[href*="twitter.com"], #workshops .links a[href*="twitter.com"] {
+/*background-image: url(images/twitter.png);*/
+padding: .3em .3em .3em 0;
+width: 1em;
+background-repeat: no-repeat; 
+background-size: auto 80%;
+background-position: 2px 50%;
+/* background-color: rgba(175,0,255, 0.6); */
+color: #fff}
+
+#schedule .time, #workshops .time {position: absolute;
+font-family: 'letter-gothic-std', monospace;
+top: 1px;
+left: 1px;
+width: 40%;
+/*width: calc(40% - 1px);
+*/background: rgba(0,0,0,.6);
+padding: .1em 0;
+margin-left: 0;
+font-size: 1.4vw; 
+color: #fff;
+text-align: center; 
+white-space: nowrap;
+overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+text-overflow:    ellipsis;
+}
+
+#workshops .time {
+top: 1px;
+bottom: auto}
+
+#schedule .long .time {
+background: rgba(0,0,0,.6);
+
+}
+
+#schedule .short .time {
+background: rgba(0,0,0,.6);
+
+}
+
+#schedule #day2  .time {
+right: 1px;
+left: auto;
+margin: auto;
+float: right}
+
+.dtend, .ndash {display: none}
+
+#workshops {
+background: #fff;
+position: relative;
+z-index: -1}
+
+#workshops h1 {padding-top: 1em;
+margin-top: -em}
+
+#workshops > p:first-of-type {
+	margin-bottom: 2em
+}
+
+#workshops .summary {
+width: 48%;
+float: left;
+position: relative;
+z-index: 0;
+margin-right: 30%;
+margin-bottom: 1em;
+}
+
+#workshops .description {
+width: 47%;
+float: left;
+margin-right: 2%;
+font-size: .9em
+}
+
+#workshops .biography {
+width: 47%;
+float: left;
+margin-right: 0;
+font-size: .9em
+}
+
+
+#workshops img {width: 40%;
+height: auto}
+
+#workshops .summary .title, #workshops .summary .name{
+display: block;
+font-style: normal;
+position: absolute;
+color: #fff;
+width: 55%;
+margin: 0 1%;
+z-index: 1;
+-webkit-font-smoothing: antialiased;}
+
+#workshops .summary {
+}
+
+#workshops .vevent {
+overflow: hidden}
+
+#workshops .summary .title {bottom: 2.5em;
+font-weight: 200;
+position:absolute;
+left: 42%;
+text-transform: none}
+
+#workshops .summary .name {bottom: .5em;
+left: 42%;
+}
+
+
+#workshops .info {background: #eee;
+padding: .75em; }
+
+#workshops .time {width: 19.1%}
+
+#workshops .dtend, #workshops .ndash {display: none}
+
+
+#workshops .info .button {padding: .75em 1em }
+
+#workshops h4, #workshops h5 {margin: 0;
+font-family: inherit;
+font-weight: 300;
+line-height: 1.1;
+text-transform: none
+}
+
+ #workshops h5 {margin-top: .6em}
+
+#workshops p {margin-bottom: 1em}
+#workshops .info p {font-size: .875em;
+line-height: 1.4em;
+margin-bottom: .6em; } 

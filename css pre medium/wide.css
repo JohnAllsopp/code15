@@ -1,0 +1,14 @@
+.summary {font-size:1.3em}
+
+#schedule .time, #workshops .time {font-size:.8em}
+
+#overview section {
+	width: 45%;
+	float: left;
+	margin-bottom: 1.2em
+}
+
+#overview section:nth-of-type(even) {
+	margin-left: 4.99%
+}
+
